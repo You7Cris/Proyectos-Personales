@@ -1,0 +1,18 @@
+1. Introduccion
+2. HTML desde cero 
+3. CSS desde cero
+4. JavaScript desde cero 
+
+HTML (Estructura de la web)
+ Nos permite definir la web de forma basica.
+
+ Se necesita:
+ - Navegador web
+ - Editor de texto (bloc de notas, sublime, Visual Studio)
+
+
+CSS (Dar estilo a la pagina, lenguaje de maquetacion, hojas de estilo en cascada)
+
+Dar apariencia y estilo a una pagina web
+
+

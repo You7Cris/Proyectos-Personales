@@ -1,0 +1,117 @@
+<!--<etiqueta atributo="valor">Texto o atributos</etiqueta>
+
+<strong>Hola mundo desde HTML</strong> <!--Negrita
+
+<h3>Hola mundo 2</h3>-->
+
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Mi primera web</title>
+    </head>
+    <body>
+        <!--Cuerpo de la pagina web-->
+        <h1>Titulo de mi web</h1> <!--Titulo principal-->
+        <h2>Bienvenidos a mi web</h2> <!--Titulo secundario-->
+
+        <p> <!--Parrafo-->
+            Hola que tal desde este curso
+        </p>
+        <br/> <!--Salto de linea-->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec laoreet lectus, at placerat urna. Vivamus ut faucibus nisi. Maecenas quis urna at ipsum facilisis dignissim vel sit amet nisl. Morbi ac egestas ligula, et congue dolor. Suspendisse eget diam sed odio maximus dapibus. Nullam pretium purus non eros venenatis sodales. Pellentesque hendrerit tempor augue, eu venenatis neque vestibulum nec. Maecenas tristique, justo ut lacinia egestas, augue ex ullamcorper orci, a venenatis felis tortor et dolor. Praesent eu aliquet nulla. Integer non lobortis dui. Etiam non viverra massa, vel semper nulla.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec laoreet lectus, at placerat urna. Vivamus ut faucibus nisi. Maecenas quis urna at ipsum facilisis dignissim vel sit amet nisl. Morbi ac egestas ligula, et congue dolor. Suspendisse eget diam sed odio maximus dapibus. Nullam pretium purus non eros venenatis sodales. Pellentesque hendrerit tempor augue, eu venenatis neque vestibulum nec. Maecenas tristique, justo ut lacinia egestas, augue ex ullamcorper orci, a venenatis felis tortor et dolor. Praesent eu aliquet nulla. Integer non lobortis dui. Etiam non viverra massa, vel semper nulla.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec laoreet lectus, at placerat urna. Vivamus ut faucibus nisi. Maecenas quis urna at ipsum facilisis dignissim vel sit amet nisl. Morbi ac egestas ligula, et congue dolor. Suspendisse eget diam sed odio maximus dapibus. Nullam pretium purus non eros venenatis sodales. Pellentesque hendrerit tempor augue, eu venenatis neque vestibulum nec. Maecenas tristique, justo ut lacinia egestas, augue ex ullamcorper orci, a venenatis felis tortor et dolor. Praesent eu aliquet nulla. Integer non lobortis dui. Etiam non viverra massa, vel semper nulla.
+        </p>
+        <hr/> <!--Linea de salto-->
+        
+        <h2>Imagenes en HTML</h2>
+
+        <img src="./imagenes/gato.jpg" alt="imagen de un gato" title="Foto de un gato" width="455px" />
+
+
+        <hr/>
+        <h3>Tercer encabezado de la pagina</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec laoreet lectus, at placerat urna. <strong>Vivamus ut faucibus nisi</strong>. Maecenas quis urna at ipsum facilisis dignissim vel sit amet nisl. Morbi ac egestas ligula, et congue dolor. Suspendisse eget diam sed odio maximus dapibus. 
+            <blockquote> <!--Remarcar una cita dentro del texto-->
+                pretium purus non eros venenatis sodales. Pellentesque hendrerit tempor augue, eu venenatis neque vestibulum nec. Maecenas tristique, justo ut lacinia egestas, augue ex ullamcorper orci, a venenatis felis tortor et dolor. Praesent eu aliquet nulla. Integer non lobortis dui.<span id="resaltado" class="rojo amarillo">Etiam non viverra massa, vel semper nulla.</span>
+            </blockquote> 
+
+        </p>
+
+        <h3>Formulario</h3>
+
+        <form>
+            <p>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Cristian" />
+            </p>
+            
+            <p>
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion"></textarea>
+            </p>
+
+            <input type="radio" name="genero" value="hombre"> Hombre <br/>
+            <input type="radio" name="genero" value="hombre"> Mujer <br/>
+            <input type="radio" name="genero" value="hombre"> Nada <br/>
+
+            <select name="generos">
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="nada">Nada</option>
+            </select>
+
+            <input type="submit" value="Enviar formulario"/>
+
+            
+        </form>
+
+
+        <h3>Listado de frutas</h3>
+        <!--Listas ordenadas-->
+        <ol>
+            <li>Manzana</li>
+            <li>Naranja</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ol>
+        <!--Listas desordenados-->
+        <ul>
+            <li>Manzana</li>
+            <!--Sublistas-->
+                <ul>   
+                    <li>Roja</li>
+                    <li>Verde</li>
+                </ul>
+            <li>Naranja</li>
+            <li>Pera</li>
+            <li>Sandia</li>
+        </ul>
+
+        <hr/>
+        <!--Tablas en HTML-->
+        <table border="1">
+            <tr> <!--Filas-->
+                <th>Nombre</th> <!--Columnas-->
+                <th>Apellidos</th>
+                <th>Pais</th>
+            </tr>
+            <tr> <!--Filas-->
+                <td>Cristian</td> <!--Columnas-->
+                <td>Gonzalez</td>
+                <td>ColombiaYork</td>
+            </tr>
+            <tr> <!--Filas-->
+                <td>Adrian</td> <!--Columnas-->
+                <td colspan="2">Pedroza</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
