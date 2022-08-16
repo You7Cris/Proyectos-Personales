@@ -1,0 +1,33 @@
+La POO es un paradigma de programacion.
+
+Es una forma de ver un mundo.
+
+Objetos
+Propiedades 
+Acciones 
+
+Fundamento #1:
+Clases: Son aquellos que nos permiten definir que propiedades, metodos van a realizar o tener los Objetos.
+
+Clase Coche, Carro 
+Atributos (Variables): Caracteristicas que tiene la clase. (Nombre, marca, tipo de rueda, numero de puertas) #Los atributos pueden ser infinitas
+
+Metodos: Acciones que puede realizar la clase, en la clase Coche (arrancar, encender la luz, cerrar y abrir espejos, prender la radio)
+
+new Coche() # Nuevo objeto
+
+Abstraccion: Se utilizan los metodos para interactuar con los objetos, se utiliza para la agilidad de trabajos.
+Se utiliza el codigo que se encuentra en la clase para agilizar el trabajo.
+
+Herencia: Heredar propiedades y metodos.
+Clase vehiculo seria el padre, clase moto, clase autobus serian hijos que hereden de la clase principal (padre)
+
+Modularidad: Voy a poder dividir la aplicacion en partes pequeñas para tareas especificas. 
+Clase usuario, clase producto, son clases separadas que permiten organizar mejor la aplicacion y cada clase se dedica a algo en concreto.
+
+Ocultacion: Cada objeto tiene sus datos concretos, solo deben modificarse dentro de la clase.
+
+metodos getter y Cedex que se encarguen de modificar o darle un valor a la clase.
+
+
+
