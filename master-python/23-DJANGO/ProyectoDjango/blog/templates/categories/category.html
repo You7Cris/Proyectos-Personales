@@ -1,0 +1,15 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %} {{category.name}} {% endblock %}
+
+{% block content %}
+    <h1 class="title">{{category.name}}</h1>
+    <p>{{category.description}}</p>
+
+    <!--{% include 'articles/articles.html' with articles=articles %}-->
+    {% include 'articles/articles.html' with articles=category.articles.all %} <!--Funciona ingual que el de arriba-->
+
+    <!-- Solo accedemos a una propiedad -->
+    
+
+{% endblock %}

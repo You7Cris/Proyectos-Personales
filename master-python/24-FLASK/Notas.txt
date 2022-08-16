@@ -1,0 +1,33 @@
+## INSTALACION DE FLASK
+
+Flask se usa para hacer aplicaciones mas sencillas que django ya que no cuenta con algunas funcionalidades
+
+Ver la version de python para instalar FLASK
+
+pip install Flask
+
+
+# Rutas
+
+@app.route('/'):
+def ....
+
+Utilizar bloques
+{% block nombre %}
+
+
+
+Descargar del Logo de Flask 
+https://www.freepng.es/png-jvtl39/download.html
+
+# Crear Bases de datos
+
+Se trabajo con MySQL 
+
+pip install flask-mysqldb
+
+from flask_mysqldb import MySQL
+
+# Conexion DB
+
+

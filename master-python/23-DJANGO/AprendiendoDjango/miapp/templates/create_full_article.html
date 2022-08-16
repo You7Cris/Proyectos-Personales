@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% load filters %}
+
+{% block title %} Pagina de pruebas {% endblock %}
+
+{% block content %}
+<h1 class="title"> Formularios en Django</h1>
+
+{% if form.errors %}
+    <strong class="rojo">
+        Hay errores en el Formularios
+    </strong>
+{% endif %}
+
+<form action="" method="POST">
+
+    {% csrf_token %}
+
+    {{form.as_p}} <!--as_p es para mostrar todo dentro de un parrafo, as_ul mostrar dentro de una lista-->
+
+    <input type="submit" value="Guardar" />
+
+</form> 
+
+{% endblock %}

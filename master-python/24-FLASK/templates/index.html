@@ -1,0 +1,44 @@
+{% extends 'layout.html '%}
+
+{% block title %}
+    Pagina de inicio
+{% endblock %}
+
+{% block content %}
+    <h1>Pagina de inicio</h1>
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+            {% for message in messages %}
+                <div class="message alert-success">
+                    {{message}}
+                </div>
+
+            {% endfor %}
+
+        {% endif %}
+    {% endwith %}
+
+    {#
+        {{dato1}}
+        {{dato2}}
+        {{lista}}
+    #}
+
+    {# comment #}
+    
+    {# 
+    {% include 'includes/edad.html' %}
+    
+
+    <p>Tu edad es: {{edad}}</p>
+
+    {% include 'includes/personas.html' %}
+    #}
+
+
+{% endblock %}
+
+        
+  

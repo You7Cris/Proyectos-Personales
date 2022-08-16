@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+
+<!--Esto es un comentario en HTML-->
+{% comment "Nota para el comentario" %}
+    <h1>Hola</h1>
+
+{% endcomment %}
+
+
+<h1 class="title">{{title}}</h1>
+
+<p>{{mi_variable}}</p>
+
+<!--Condicionales-->
+{% if nombre and nombre == 'Cristian Gonzalez' %}
+    <p>{{nombre}}</p>
+{% else %}
+    <p><strong>El nombre no existe o no coincide</strong></p>
+{% endif %}
+
+{% comment "Lista y ciclo for" %}
+{% endcomment %}
+
+<h3>Listado de lenguajes de programacion</h3>
+
+<ul>
+    {% for lenguaje in lenguajes %}
+        <li>{{forloop.counter}} {{lenguaje}} </li><!--{{forloop.first}} {{forlopp.last}}</li> <!--Forloop.first devuelve True porque el primer dato si existe -->
+        <!--revocounter = numeros de forma invertida-->
+    {% empty %} 
+        <p>NO HAY LENGUAJES QUE MOSTRAR</p>
+    {% endfor %}
+</ul>
+
+
+{% include 'fecha-actual.html' with saludo="Bienvenido" %} <!--Incluyendo un template-->
+
+{% endblock %}

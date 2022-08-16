@@ -1,0 +1,289 @@
+1. Primeros pasos
+2. Routing y vistas
+3. Plantillas y templates 
+4. Estilos y apariencia
+5. Lenguaje de plantillas 
+6. Filtros en plantillas 
+7. Modelos y bases de datos
+8. Formularios y validacion
+9. Panel de administracion
+10. Proyecto web 
+11. Sistema de paginas
+12. Modelos y relaciones 
+13. Sistema de categorias y articulos 
+14. Panel de administracion avanzado
+15. Paginacion
+16. Registro de usuarios 
+17. Login de usuarios
+18. MySQL en Django
+
+
+DJANGO 
+
+Es un framework de codigo abierto que trabaja con el MVC (Modelo-Vista-Controlador)
+
+Modelo -> Interaccion con la base de datos
+Controlador -> Procesar informacion, peticiones del usuario
+Vista -> Lo que va a ver el usuario 
+
+Instalar DJANGO 
+
+pip install Django==4.0.5 
+
+python -h //Ayuda
+
+python -m tkinter --version //Version de tkinter
+
+python -m django --version
+
+
+## CREAR PROYECTO 
+django-admin startproject nombre_proyecto 
+
+python manage.py migrate //Generar una base de datos con las funcionalidades que vienen por defecto con Django
+
+python manage.py runserver //Arrancar el servidor local
+
+python manage.py help //Ayuda 
+
+-----------------------------------------------------------------
+asgi.py 
+settings.py //Archivos de configuracion del proyecto
+
+urls.py //Configurar las rutas del proyecto
+
+wsgi.py //Configuracion del framework internos
+
+
+## INSTALLED_APPS 
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
+Paquete que va formando nuestro proyecto web
+
+Recomendable tener varias Apps para las diferentes entidad
+Ej: categorias, usuarios, administracion, etc.. y son reutilizables.
+ 
+ ## Crear una APP 
+
+ python manage.py startapp nombre_app 
+
+ Genera una carpeta 
+
+ cuenta con diferentes archivos.
+
+ models.py //Modelos y entidades 
+ views.py //Vistas
+
+
+ ## CREAR VISTAS Y RUTAS 
+
+ se trabajan dentro del views.py 
+
+ - shortcuts functions 
+https://docs.djangoproject.com/en/4.0/topics/http/shortcuts/
+
+
+##Metodo render para trabajar con los template.
+
+Agregando en el archivo settings.py en APPS la ruta de la carpeta 
+
+Layouts 
+
+##CSS 
+
+se crea una carpeta llamada static, para ficheros estaticos (se guardan archivos css, imagenes)
+
+Pylint Django # Reconocer mejor el codigo de django
+
+pip install pylint-django 
+
+
+### models.py
+
+Se crean las clases para la informacion de los campos en las tablas y realizar las migraciones.
+
+migraciones ##
+
+python manage.py makemigrations 
+
+python manage.py sqlmigrate (nombre_app) (numero)
+
+python manage.py sqlmigrate miapp 0001 
+
+ BEGIN;
+--
+-- Create model Article
+--
+CREATE TABLE "miapp_article" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "title" varchar(100) NOT NULL, "content" text NOT NULL, "public" bool NOT NULL, "create_at" datetime NOT NULL, "update_at" datetime NOT NULL);
+--
+-- Create model Category
+--
+CREATE TABLE "miapp_category" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "description" varchar(250) NOT NULL, "create_at" date NOT NULL);
+COMMIT;
+
+python manage.py migrate # Se crea la base de datos
+
+# Actualizacion de la base de datos
+
+python manage.py makemigrations
+
+1. Agregar valor por defecto
+2. Añadir en el modelo
+
+python manage.py sqlmigrate nombre_app numero
+"                         " miapp 0002
+"                         " miapp 0003
+
+python manage.py migrate
+
+
+PROTOCOLO HTTP -> Es un protocolo que permite la comunicacion entre los diferentes sitios web de internet.
+
+Metodo GET -> Enviar informacion en la propia URL de la pagina la cual es visible 
+
+Metodo POST -> Enviar informacion que puede ser visible pero que no se muestra directamente en la URL del navegador
+
+## Crear super usuario
+
+python manage.py createsuperuser 
+
+cristian
+cristian@gmail.com
+12345678
+
+
+Meta class Django 
+
+magic methods python
+
+Carpeta media para guardar las imagenes
+
+pip install Pillow //Es un paquete para manipular y trabajar con imagenes dentro de python
+
+#### NUEVO PROYECTO Django
+
+django-admin startproject ProyectoDjango
+
+python manage.py startapp mainapp
+
+python manage.py startapp pages
+
+# Class pages
+
+python manage.py makemigrations
+
+python manage.py sqlmigrate pages 0001
+
+python manage.py migrate 
+
+# Crear superusuario para administrar el panel de administracion 
+
+python manage.py createsuperuser
+
+cristian
+cris@gmail.com
+12345678
+
+
+En la carpeta pages se crea un archivo 
+
+context_processors.py
+
+Es recomendable que se trabaje en cada app con un archivo urls.py para el manejo de las rutas que se anexan con el archivo principal del proyecto mediante una importacion
+
+from django.urls import path, include se agrega el include
+
+y ya se puede Agregar
+path('', include(nombre_app.urls))
+
+Editor de texto enriquecido
+
+CKeditor 
+TinyMCE
+
+## CKeditor Instalar
+
+pip install django-ckeditor
+
+Django Ckeditor # buscar en la web para mirar la edicion 
+
+python manage.py makemigrations
+
+python manage.py sqlmigrate pages 0002
+
+python manage.py migrate # Generar los cambios en la base de datos
+
+# Crear nueva App para el manejo de categorias y articulos
+
+python manage.py startapp blog 
+
+# Hacer migracion para blog
+
+python manage.py makemigrations 
+
+python manage.py sqlmigrate blog 0001
+
+python manage.py migrate
+
+
+### Estudiar los diferentes tipos de conexiones entre las tablas
+
+ForeignKey
+ManyToMany (Relacion de muchos a muchos)
+
+
+### Paginacion
+
+from django.core.paginator import Paginator
+
+
+### Formulario de registro y de Login
+
+Modulo de autenticacion
+
+from django.contrib.auth.forms import UserCreationForm
+
+## DECORADORES 
+
+from django.contrib.auth.decorators import login_required
+
+@login_required(login_url="login") # Para determinar cuando el usuario ya haya iniciado sesion y lo que se le muestra
+
+# Trabajar con MySQL
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME' : 'proyectodjango',
+        'USER': 'root',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': 3306
+    }
+}
+python version 3.10.5
+
+pip install mysqlclient
+
+
+python library uci -> buscar mysqlclient y descargar la version que tenga la version actual que tenemos en python
+
+python --version # version de python
+
+cuando lo tenemos instalado ejecutamos las migraciones
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+admin
+admin@admin.com
+12345678
