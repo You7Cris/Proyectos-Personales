@@ -1,0 +1,52 @@
+# MyfirstApp 
+
+*Instalar node js*
+
+Aplicacion hecha con React.
+
+npx create-react-app myfirstapp
+
+npm start //ejecutar 
+
+# package.json nos permite describir de que se trata el proyecto.
+Permite ver el nombre, version, si es privado y las dependencias.
+
+npm star permite ejecutar el programa.
+npm build permite nos permite poder convertir el codigo de desarrollo a codigo de produccion.
+npm test nos permite ejecutar testeo.
+
+browserlist navegadores a los que les queremos dar soporte.
+
+# package-lock.json
+
+Funcionamiento interno (np se toca)
+
+# gitignore 
+
+archivos ignorados 
+
+# Carpeta src 
+
+contiene el codigo de React 
+
+# Carpeta public 
+
+Archivo html, templates.
+
+React es la biblioteca para crear interfaces
+ReactDOM permite crear interfaces para la web 
+
+webpack ayuda a que se actualice automaticamente.
+
+JSX -> JavaScript
+
+Babel js
+
+# Componente 
+
+Function App(){
+    return(
+        <div>Hello World</div>
+    );
+}
+

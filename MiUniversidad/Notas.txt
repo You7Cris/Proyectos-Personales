@@ -1,0 +1,21 @@
+Aplicacion basica para el manejo de una universidad, realizada con Django
+
+django-admin startproject MiUniversidad
+
+django-admin startapp Academica
+
+ORM (Object-Relational Mapping): Mapeo objeto-relacional
+
+Es una tecnica de programacion para convertir datos entre el sistema de tipos de datos usado en un lenguaje de programacion que soporte el paradigma de la Programacion Orientada a Objetos y los tipos de datos soportados por un motor de base de datos relacional especifico, como medio de persistencia de datos.
+
+python manage.py migrate 
+
+python manage.py makemigrations 
+
+python manage.py createsuperuser 
+
+cristian 
+cris@gmail.com 
+
+12345678
+
