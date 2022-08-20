@@ -51,5 +51,7 @@ console.log("La diferencia de edad es de: ",diferencia," años");*/
 
 //Operadores logicos, unarios y de asignacion
 
+// Logicos < > <= >= ==
+
 
 
