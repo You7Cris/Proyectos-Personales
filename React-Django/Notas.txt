@@ -1,0 +1,11 @@
+# Requisitos
+
+Python 
+Node js 
+
+# Comandos 
+
+pip install django djangorestframework 
+
+
+
