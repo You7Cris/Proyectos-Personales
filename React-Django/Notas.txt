@@ -13,21 +13,28 @@ django-admin startproject music_controller
 django-admin startapp api 
 django-admin starapp fronted
 
+node_modules : Donde se guardan todas las dependencias de Package.json 
 
-npm init -y para instalar Package.json
+packgade.json: Permite instalar todas las dependencias necesarias para el proyecto 
 
-npm i webpack webpack-cli --save-dev
+webpack: empaquetador de JavaScript, permite juntar muchos archivos para que la pagina sea mas liviana
 
-npm i @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev 
+Babel: permite trabajar con las ultimas versiones de JavaScript pero da la funcionalidad de poner ese codigo reciente a codigo antiguo para que lo pueda interpretar navegadores viejos.
 
-npm i react react-dom --save-dev 
+# Carpeta Public
 
-npm install @material-ui/core 
+Archivos que se van a mostrar al publico 
 
-npm install @babel/plugin-proposal-class-properties 
+# Carpeta src 
 
-npm install react-router-dom 
+Se encuentran todos los componentes y la configuracion de React 
 
-npm install @material-ui/icons
 
+
+
+
+#API 
+
+
+axios 
 
