@@ -64,6 +64,6 @@ you7cris
 cristan2110239@gmail.com
 12345678
 
-
+python manage.py makemigrations
 
 
