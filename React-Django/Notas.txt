@@ -29,12 +29,41 @@ Archivos que se van a mostrar al publico
 
 Se encuentran todos los componentes y la configuracion de React 
 
-
-
-
-
 #API 
 
-
 axios 
+
+
+# Elaboracion del proyecto 
+
+npx create-react-app react-crud-companies
+
+
+# Django - MySQL - API 
+
+virtualenv -p python3 env 
+
+.\envScripts\activate
+
+pip install Django==4.1 
+
+django-admin startproject Proyecto_API
+
+django-admin startapp api
+
+pip install mysqlclient pymysql 
+
+pip list 
+
+python manage.py migrate 
+
+python manage.py createsuperuser 
+
+you7cris
+
+cristan2110239@gmail.com
+12345678
+
+
+
 
