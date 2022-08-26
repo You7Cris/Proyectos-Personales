@@ -66,7 +66,32 @@ cristan2110239@gmail.com
 
 python manage.py makemigrations
 
-npm install cors --save //para errores del cors para la conexion con la API 
+pip install django-cors-headers
 
-npm audit fix --force 
+en APPS_INSTALLED agregar
+
+corsheaders
+
+En MIDDLEWARE agregar 
+
+corsheaders.middleware.CorsMiddleware
+
+y agregar esto
+
+CORS_ORIGIN_ALLOW_ALL = True //Permitir acceso de todos los dominios
+
+CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST =(
+  'http: // localhost: 8000',
+) //Restricciones de dominios
+
+
+# Instalacion de React 
+
+npx create-react-app react-crud-companies 
+
+npm i bootstrap 
+
+npm start 
+
 
