@@ -94,4 +94,11 @@ npm i bootstrap
 
 npm start 
 
+# Instalar React Router Dom 
+
+Permite crear enrutamientos 
+
+npm i react-router-dom
+
+
 

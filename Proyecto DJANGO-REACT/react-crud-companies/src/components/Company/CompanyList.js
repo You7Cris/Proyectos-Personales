@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+//Componente 
+import CompanyItem from "./CompanyItem";
+
 import * as CompanyServer from './CompanyServer';
 
 const CompanyList = () => {
@@ -31,9 +34,9 @@ const CompanyList = () => {
   },[]);
 
   return (
-    <div>
+    <div className="row">
       {companies.map((company)=>(
-        <CompanyItem/>
+        <CompanyItem key={company.id} company={company} listCompanies={listCompanies} />
       ))} 
     </div>
   ); //map es para recorrer como un ciclo for
