@@ -11,6 +11,10 @@ export const listCompanies = async () => {
     return await fetch(API_URL);
 };
 
+export const getCompany = async (companyId) => {
+    return await fetch(`${API_URL}${companyId}`);
+};
+
 export const registerCompany = async (newCompany) => {
     return await fetch(API_URL,{
         method: 'POST',

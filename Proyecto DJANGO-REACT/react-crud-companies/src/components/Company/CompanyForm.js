@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as CompanyServer from "./CompanyServer";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 
 const CompanyForm = () => {
     const history = useNavigate();
+    const params = useParams();
+
+    //console.log(params);
+
     const initialState = {id:0,name:"", foundation: 1950, website: ""};
     const [company,setCompany]=useState(initialState);
     const handleInputChange = (e) => {
@@ -31,6 +35,26 @@ const CompanyForm = () => {
             
         }
     };
+
+    const getCompany = async (companyId) => {
+        try {
+            const res = await CompanyServer.getCompany(companyId);
+            const data = await res.json();
+            console.log(data);
+            const { name, foundation, website }= data.companies;
+            setCompany( {name, foundation, website});
+        } catch (error) {
+            console.log(error);
+            
+        }
+    };
+
+    useEffect(() => {
+        if(params.id) {
+            getCompany(params.id);
+        }
+        // eslint-disable-next-line
+    }, []);
 
 
     return (
