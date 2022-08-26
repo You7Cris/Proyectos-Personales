@@ -66,4 +66,7 @@ cristan2110239@gmail.com
 
 python manage.py makemigrations
 
+npm install cors --save //para errores del cors para la conexion con la API 
+
+npm audit fix --force 
 
