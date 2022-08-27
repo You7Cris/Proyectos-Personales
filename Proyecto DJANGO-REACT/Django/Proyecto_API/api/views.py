@@ -1,6 +1,6 @@
 import json
 from unicodedata import name
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import View
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
@@ -9,6 +9,20 @@ from django.http.response import JsonResponse
 
 
 # Create your views here.
+
+"""
+def index(request):
+    return render(request, 'api/index.html',{
+        'title': 'Inicio'
+    })
+
+"""
+    
+
+
+
+# Cuando se trabajo co archivos JSON
+    
 
 class CompanyView(View):
     

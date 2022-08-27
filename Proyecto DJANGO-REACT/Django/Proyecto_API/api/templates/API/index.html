@@ -1,0 +1,22 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+
+{% block content %}
+
+    <h1>{{title}}</h1>
+
+    <hr>
+    {% for companies in Company %}
+        <h2>
+            {{companies.name}}
+        </h2>
+        <span> 
+            <a target>
+            {{companies.website}}
+            </a>
+
+        </span>
+    {% endfor %}
+{% endblock %}
