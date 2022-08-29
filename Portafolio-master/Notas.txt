@@ -1,0 +1,18 @@
+pip install virtualenv // Instalar entorno virtual 
+
+python -m virtualenv venv //crear una carpeta venv donde estaran los componentes y versiones que trabajare con el proyecto
+
+.\venv\Scripts\activate //Activar el entorno virtual 
+
+django-admin startproject django_portfolio . 
+
+pip install Pillow
+
+python manage.py makemigrations 
+
+python manage.py migrate 
+
+cristian 
+cristan2110239@gmail.com 
+12345678
+
