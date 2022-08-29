@@ -28,3 +28,7 @@ urlpatterns = [
 
 
 urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT) #Para que se puedan ver las imagenes en el navegador
+
+# Titulo pane
+admin.site.site_title = "DJANGO | Cristian Gonzalez"
+admin.site.site_header = "Panel de administracion"
