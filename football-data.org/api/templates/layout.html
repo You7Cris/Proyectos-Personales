@@ -33,14 +33,14 @@
                             <th><img class="img-fluid" src={{content.competition.emblem}} />{{content.competition.name}} </td>
                             <td><img class="img-fluid" src={{content.homeTeam.crest}} alt="{{content.homeTeam.shortName}}"/>{{content.homeTeam.shortName}} VS
                             {{content.awayTeam.shortName}} <img src={{content.awayTeam.crest}} /></td>
-                            <td>{% if fulltime %}
+                            <td>{% if content.status == "FINISHED" %}
                                     {{content.score.fullTime.home}}
                                     VS
                                     {{content.score.fullTime.away}}
                                 {% else %}
                                     {{content.score.halfTime.home}}
                                     VS
-                                    {{content.score.fullTime.away}}
+                                    {{content.score.halfTime.away}}
                                 {% endif %}
                                
                             </td>
