@@ -18,9 +18,9 @@
     <header>
         {% block context %}
             <div class="container">
-                <table id="prueba" class="table table-bordered">
+                <table id="prueba" class="table table-bordered display">
                     <thead>
-                        <tr class="table-primary">
+                        <tr class="table-primary text-center">
                             <th scope="col">Fecha/Dato</th>
                             <th scope="col">Competicion</th>
                             <th scope="col">Oponentes</th>
@@ -41,10 +41,10 @@
                                     {{content.status}}
                                 {% endif %}
                             </th>
-                            <td><img class="img-fluid" src={{content.competition.emblem}} />{{content.competition.name}} </td>
+                            <td class="col"><img class="img-fluid" src={{content.competition.emblem}} />{{content.competition.name}} </td>
                             <td><img class="img-fluid" src={{content.homeTeam.crest}} alt="{{content.homeTeam.shortName}}"/>{{content.homeTeam.shortName}} VS
                             {{content.awayTeam.shortName}} <img src={{content.awayTeam.crest}} /></td>
-                            <td>
+                            <td class="col">
                                 {% if content.status == "FINISHED" %}
                                 <strong>
                                     {{content.score.fullTime.home}}
@@ -103,7 +103,8 @@
                             "previous": "Anterior"
                         },
                     },
-                })});
+                })
+            });
         </script>
         
        
