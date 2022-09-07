@@ -1,0 +1,59 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aqua;
+}
+
+/*Pseudoclase es un selector (:) */
+
+ul li:first-child{ /*Primer hijo de la lista*/
+    color: blueviolet;
+    font-weight: bold;
+}
+
+ul li {
+    font-size: 20px;
+}
+
+ul li:nth-child(2){ /*Sirve para seleccionar cualquier elemento de la lista*/
+    color: orange;
+    font-weight: bold;
+}
+
+ul li:last-child{
+    /*Ultimo elemento de la lista*/
+    color: brown;
+}
+
+#mi-enlace {
+    font-size: 30px;
+    color: coral;
+}
+
+#mi-enlace:link{ /*Si no lo he visitado*/
+    color: red;
+}
+
+#mi-enalce:visited {
+    color: blue;
+}
+
+#mi-enlace:hover{
+    color: blue;
+}
+
+#mi-enlace:active{
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+input[type="text"]:focus{
+    border: 4px dashed red;
+}

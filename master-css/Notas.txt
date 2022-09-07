@@ -1,0 +1,34 @@
+Temas:
+
+* HTML y CSS 
+* Responsive 
+* Animaciones 
+* SASS 
+* LESS 
+* Flexbox 
+* CSS Grid Layout 
+* Bootstrap 4 
+* Maquetacion web 
+* Desarrollo web fron-ted
+
+
+# HTML 
+
+# CSS (Hojas de estilos en cascada)
+
+
+Proyecto HTML y CSS.
+
+1. De PSD a HTML y CSS 
+2. Unir todo lo visto
+3. Maquetacion de la web 
+
+Responsive Web design con CSS3 
+
+1. ¿Que es el responsive?
+2. Maquetacion con porcentajes
+3. Media queries
+4. Viewport 
+5. Adaptar web a cualquier pantalla
+6. Pasamos a una maquetacion avanzada 
+ 

@@ -1,0 +1,45 @@
+@font-face{
+    font-family: QwitcherGrypen;
+    src: url(fonts/Qwitcher_Grypen/QwitcherGrypen-Bold.ttf)
+}
+
+
+body {
+    background: red;
+}
+
+h1{
+    font-family: QwitcherGrypen, Arial, Helvetica, sans-serif;
+    font-style: italic; /* Letra en cursiva */
+
+    /* Colores */
+
+    /* Colores del sistema */
+    color: mediumpurple;
+
+    /* Colores hexadecimales */
+    color: #cccccc;
+    color: #000000;
+    color: #ffffff;
+    color: #943030;
+
+    /* Colores RGB */
+    color: rgb(255, 225, 102);
+
+
+    /* Colores RGBA */
+    color: rgba(255, 225, 102, 0.5);
+}
+
+h3 {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold; /*grosor de la letra*/
+}

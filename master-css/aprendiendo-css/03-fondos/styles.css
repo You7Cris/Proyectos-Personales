@@ -1,0 +1,29 @@
+body {
+    background-color: #ccc;
+
+    /*
+    background-image: url("img/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size:100%; recomendado para iamgenes grandes 
+    color: white;
+    background-attachment: fixed; /*El fondo no se mueva
+    background-position: right bottom;*/
+    color: black;
+    text-align: justify;
+    text-indent: 15px;
+    word-spacing: 10px; /*espacios entre palabras*/
+    letter-spacing: 5px; /*espacio entre letras*/
+
+}
+
+#caja {
+    border: 5px solid black;
+    padding: 5px;
+    background-color: rgb(59, 118, 213);
+    color: white;
+    font-family: "Opens Sans";
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}

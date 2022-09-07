@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    padding: 40px;
+
+}
+
+
+.caja,
+.caja2 {
+    display: block;
+    width: 250px;
+    height: 250px;
+    border: 10px solid lightcoral;
+    background-color: lightblue;
+    margin: 15px; /* Margen externo */
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 24px;
+    margin-right: 10px;
+    padding: 20px; /* Margen interno */
+    padding-bottom: 20px; 
+    float: left; /*Float permite moverlos, se puede aplicar a todos que se encuentren con display block */
+}
+
+#cajas {
+    max-width: 1035px;
+    border: 1px solid black;
+}
+
+p{
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial;
+    line-height: 250px;
+}
+
+.clearfix {
+    float: none;
+    clear: both; /*Limpiar los flotados */
+}
+
