@@ -31,4 +31,11 @@ Responsive Web design con CSS3
 4. Viewport 
 5. Adaptar web a cualquier pantalla
 6. Pasamos a una maquetacion avanzada 
+
+Proyecto: Maquetar con HTML y CSS 
+Maquetacion mas avanzada 
+
+1. De PSD a HTML y CSS 
+2. Unir todo lo visto anteriormente
+
  

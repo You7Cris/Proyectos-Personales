@@ -118,4 +118,21 @@ body{
     border: 10px solid white;
     box-shadow: 0px 0px 2px gray;
     background: url("../images/bakbaner.png");
+    background-position: -200px -200px;
+    margin: 20px auto;
+    width: 94%;
+}
+
+#banner h1{
+    display: block;
+    width: 850px;
+    font-family: "BebasNeue";
+    color: white;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin: 27px auto;
+    margin-top: 20px;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 2px 2px 1px black;
 }
