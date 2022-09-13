@@ -1,5 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
 body {
-    background: rgba(133, 125, 195, 0);
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 img {
@@ -12,7 +18,12 @@ table {
 }
 
 table img{
-    position: relative ;
+     display: block;
+     float: left;
+}
+
+thead {
+    line-height: 40px;
 }
 
 thead tr.table-primary{
