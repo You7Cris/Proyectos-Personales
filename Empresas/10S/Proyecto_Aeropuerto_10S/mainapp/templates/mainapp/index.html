@@ -1,0 +1,116 @@
+{% extends 'layouts/layout.html' %}
+
+{% load static %}
+
+{% block title %}
+    {{title}}
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-between">
+            {% if user.email %}
+
+            <h2 class="text-center"> Bienvenido {{request.user.first_name}} {{user.last_name}} </h2>
+
+            {% else %}
+            <h2 class="text-center"> Bienvenido </h2>
+            
+            {% endif %}
+        </div>
+        <div class="col-sm-4">
+            <h2 class=""> Llegadas </h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div cladd="row ">
+            <div class="col-sm">
+                <table id="MyTable" class="table table-responsive ">
+                    <thead>
+                        <tr>
+                            <th>TIME</th>
+                            <th>FROM</th>
+                            <th>FLIGHT NO</th>
+                            <th>REMARKS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for arrival in llegadas.all %}
+                        <tr>
+                            <td>
+                                {{arrival.time}}
+                            </td>
+                            <td>
+                                {% for lugar in arrival.lugar.all %}
+                                    {{lugar}}
+                                {% endfor %}
+                            </td>
+                            <td>
+                                {{arrival.flight_no}}
+                            </td>
+                            <td>
+                                {% for remarks in arrival.remarks.all %}
+                                    {{remarks}}
+                                    {% if arrival.expected_time == None %}
+                                        
+                                    {% else %}
+                                        {{arrival.expected_time}}
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row justify-content-between">
+        <h2 class="title"> Salidas </h3>
+            <table id="prueba">
+                <thead>
+                    <tr>
+                        <th>TIME</th>
+                        <th>FROM</th>
+                        <th>FLIGHT NO</th>
+                        <th>REMARKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for departures in salidas.all %}
+                    <tr>
+                        <td>
+                            {{departures.time}}
+                        </td>
+                        <td>
+                            {% for lugar in departures.lugar.all %}
+                                {{lugar}}
+                            {% endfor %}
+                        </td>
+                        <td>
+                            {{departures.flight_no}}
+                        </td>
+                        <td>
+                            {% for remarks in departures.remarks.all %}
+                                {{remarks}}
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </h2>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+
