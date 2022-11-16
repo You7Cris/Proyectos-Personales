@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Master en CSS | Cristian Gonzalez</title>
     <link rel="icon" type="favicon/x-icon" href="images/supertux.png">
 </head>
@@ -85,22 +86,23 @@
             <!-- Fin de tarjetas -->
 
             <!-- Inicio barra lateral -->
+            <div class="clearfix"></div>
             <aside id="lateral">
 
                 <h3>BUSCAR</h3>
                 <div id="search">
                     <form>
                         <input type="text">
-                        <input type="button" value="L">
+                        <input type="button" class="icon" value="L">
                     </form>
                 </div>
 
                 <h3>LOGIN</h3>
-                <div id="login">
+                <div id="login" class="aside-box">
                     <form action="">
-                        <label id="user">U</label>
+                        <label id="user" class="icon">U</label>
                         <input type="email">
-                        <label id="password">w</label>
+                        <label id="password" class="icon">w</label>
                         <input type="password">
                         <input type="submit" value="Entrar">
                         <input type="reset" value="Limpiar">
@@ -111,34 +113,194 @@
                 </div>
 
                 <h3>REDES SOCIALES</h3>
-                <div id="social">
+                <div id="social" class="aside-box">
                     <div class="twitter">
-                        <a href="#">t</a>
+                        <a href="#" class="icon"<>t</a>
+                        <p class="overlay">
+                            Twitter
+                        </p>
                     </div>
                     <div class="facebook">
-                        <a href="#">f</a>
+                        <a href="#" class="icon">f</a>
+                        <p class="overlay">
+                            Facebook
+                        </p>
                     </div>
                     <div class="youtube">
-                        <a href="#">y</a>
+                        <a href="#" class="icon">y</a>
+                        <p class="overlay">
+                            Youtube
+                        </p>
                     </div>
                 </div>
 
                 <h3>PATROCINADORES</h3>
-                <div id="sponsors">
-                    
+                <div id="sponsors" class="aside-box">
+
                 </div>
 
 
             </aside>
             <!-- Fin de la barra lateral -->
 
+            <!-- Inicio articulos -->
+
+            <section id="articles">
+                <h2>Ultimos Articulos</h2>
+                <div class="clearfix">
+                </div>
+                <article>
+                    <div class="data">
+                        <span>Fecha: 12 dic</span>
+                        <span>Categoria: Pruebas</span>
+                    </div>
+                    <h4>
+                        <a href="#">Titulo del articulo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor orci quam, vitae sollicitudin justo posuere sit amet. Mauris vitae sem finibus, varius mi ut, varius nisi. Maecenas diam ex, accumsan ac consectetur quis, efficitur id justo. Curabitur porttitor eu quam congue pellentesque. Suspendisse condimentum ac lacus a bibendum. Vestibulum luctus tempus odio id semper. Aenean vestibulum justo et metus condimentum, non tristique quam luctus. Proin nec erat ligula. In laoreet ante quis lectus ultrices, a ultrices dui elementum. Maecenas consectetur rutrum enim, in iaculis elit commodo ac. Suspendisse potenti. Aliquam erat volutpat.
+                    </p>
+                </article>
+
+            </section>
+
+            <section id="articles">
+                <article>
+                    <div class="data">
+                        <span>Fecha: 12 dic</span>
+                        <span>Categoria: Pruebas</span>
+                    </div>
+                    <h4>
+                        <a href="#">Titulo del articulo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor orci quam, vitae sollicitudin justo posuere sit amet. Mauris vitae sem finibus, varius mi ut, varius nisi. Maecenas diam ex, accumsan ac consectetur quis, efficitur id justo. Curabitur porttitor eu quam congue pellentesque. Suspendisse condimentum ac lacus a bibendum. Vestibulum luctus tempus odio id semper. Aenean vestibulum justo et metus condimentum, non tristique quam luctus. Proin nec erat ligula. In laoreet ante quis lectus ultrices, a ultrices dui elementum. Maecenas consectetur rutrum enim, in iaculis elit commodo ac. Suspendisse potenti. Aliquam erat volutpat.
+                    </p>
+                </article>
+
+            </section>
+
+            <section id="articles">
+                <article>
+                    <div class="data">
+                        <span>Fecha: 12 dic</span>
+                        <span>Categoria: Pruebas</span>
+                    </div>
+                    <h4>
+                        <a href="#">Titulo del articulo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor orci quam, vitae sollicitudin justo posuere sit amet. Mauris vitae sem finibus, varius mi ut, varius nisi. Maecenas diam ex, accumsan ac consectetur quis, efficitur id justo. Curabitur porttitor eu quam congue pellentesque. Suspendisse condimentum ac lacus a bibendum. Vestibulum luctus tempus odio id semper. Aenean vestibulum justo et metus condimentum, non tristique quam luctus. Proin nec erat ligula. In laoreet ante quis lectus ultrices, a ultrices dui elementum. Maecenas consectetur rutrum enim, in iaculis elit commodo ac. Suspendisse potenti. Aliquam erat volutpat.
+                    </p>
+                </article>
+
+            </section>
+
+            <section id="articles">
+                <article>
+                    <div class="data">
+                        <span>Fecha: 12 dic</span>
+                        <span>Categoria: Pruebas</span>
+                    </div>
+                    <h4>
+                        <a href="#">Titulo del articulo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor orci quam, vitae sollicitudin justo posuere sit amet. Mauris vitae sem finibus, varius mi ut, varius nisi. Maecenas diam ex, accumsan ac consectetur quis, efficitur id justo. Curabitur porttitor eu quam congue pellentesque. Suspendisse condimentum ac lacus a bibendum. Vestibulum luctus tempus odio id semper. Aenean vestibulum justo et metus condimentum, non tristique quam luctus. Proin nec erat ligula. In laoreet ante quis lectus ultrices, a ultrices dui elementum. Maecenas consectetur rutrum enim, in iaculis elit commodo ac. Suspendisse potenti. Aliquam erat volutpat.
+                    </p>
+                </article>
+
+            </section>
+
+            <section id="articles">
+                <article>
+                    <div class="data">
+                        <span>Fecha: 12 dic</span>
+                        <span>Categoria: Pruebas</span>
+                    </div>
+                    <h4>
+                        <a href="#">Titulo del articulo</a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor orci quam, vitae sollicitudin justo posuere sit amet. Mauris vitae sem finibus, varius mi ut, varius nisi. Maecenas diam ex, accumsan ac consectetur quis, efficitur id justo. Curabitur porttitor eu quam congue pellentesque. Suspendisse condimentum ac lacus a bibendum. Vestibulum luctus tempus odio id semper. Aenean vestibulum justo et metus condimentum, non tristique quam luctus. Proin nec erat ligula. In laoreet ante quis lectus ultrices, a ultrices dui elementum. Maecenas consectetur rutrum enim, in iaculis elit commodo ac. Suspendisse potenti. Aliquam erat volutpat.
+                    </p>
+                </article>
+
+                <article id="blog">
+                    <a href="#">Ir al blog</a>
+                </article>
+
+            </section>
+
+
+            <!-- Fin articulos -->
         </section>
 
     </section>
-    
-    
+
+    <!-- Inicio pie de pagina -->
+    <div class="clearfix">
+
+    </div>
+    <footer id="footer">
+        <div class="wrap">
+
+            <div id="menu_footer">
+                <nav id="menu_footer">
+                    <h5>MENU</h5>
+                    <ul>
+                        <li><a href="#">INICIO</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">FORMACION</a></li>
+                        <li><a href="#">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="location">
+                <h5>¿DONDE ESTAMOS?</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31809.106000967146!2d-75.94545513664143!3d4.746018229392632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38701d1696dfd7%3A0x4e5a8917e065713a!2sCartago%2C%20Valle%20del%20Cauca!5e0!3m2!1ses!2sco!4v1663606114502!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="info">
+                <h5>Desarrollado con</h5>
+                <p>
+                    <img src="images/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="Creado HTML y CSS" >
+                </p>
+
+                <h5>Optimizado para</h5>
+                <p id="browsers">
+                    <a href="#">
+                        <img src="images/firefox-icon.png"  alt="Firefox" title="Firefox">
+                    </a>
+                    <a href="#">
+                        <img src="images/chrome.png"  alt="Chrome" title="Chrome">
+                    </a>
+                    <a href="#">
+                        <img src="images/Opera_256x256.png"  alt="Opera" title="Opera">
+                    </a>
+                    <a href="#">
+                        <img src="images/safari.png"  alt="Safari" title="Safari">
+                    </a>
+                    <a href="#">
+                        <img src="images/android.png"  alt="Android" title="Android">
+                    </a>
+                    <a href="#">
+                        <img src="images/ios.png"  alt="Apple" title="Apple">
+                    </a>
+
+                </p>
+
+                <h5>AUTOR</h5>
+                <p>
+                    &copy; Cristian Gonzalez 
+                </p>
+            </div>
+
+        </div>
+    </footer>
 
 
-    
+    <!-- Fin pie de pagina -->
 </body>
 </html>

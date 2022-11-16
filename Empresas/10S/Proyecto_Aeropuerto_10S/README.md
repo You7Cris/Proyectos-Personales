@@ -13,7 +13,6 @@ pip install django
 pip install mysqlclient
 
 usuario = cristian
-
 password = 12345678
 
 

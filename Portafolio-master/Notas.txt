@@ -4,6 +4,10 @@ python -m virtualenv venv //crear una carpeta venv donde estaran los componentes
 
 .\venv\Scripts\activate //Activar el entorno virtual 
 
+pip install django
+
+pip install mysqlclient
+
 django-admin startproject django_portfolio . 
 
 pip install Pillow
