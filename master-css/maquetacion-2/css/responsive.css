@@ -141,3 +141,29 @@
         max-width: 100%;
     }
 }
+<<<<<<< Updated upstream
+=======
+
+@media (max-width: 724px){
+    #header{
+        width: 100%;
+        height: 120px;
+        padding-top: 10px;
+    }
+
+    #logo{
+        float: none;
+        width: 200px;
+        margin: 0px auto;
+    }
+
+    #menu{
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        width: 440px;
+    }
+
+    
+}
+>>>>>>> Stashed changes
