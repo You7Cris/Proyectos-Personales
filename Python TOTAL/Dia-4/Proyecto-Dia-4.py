@@ -8,7 +8,7 @@ intentos = 1
 
 print(f"Hola {nombre}, he pensado un numero entre 1 y 100, y tienes solo ocho intentos para adivinar cual crees que es el numero.")  
 
-for n in range(1,8):
+for n in range(1,9):
     try:
         print(f"Intento #{intentos}")
         numero = int(input("Ingresa un numero: "))
