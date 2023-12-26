@@ -22,7 +22,7 @@ letra_fin = texto[-1] #Ultima letra
 print(f"La letra inicial es {letra_inicio} y la letra final es {letra_fin}")
 
 print("\nTEXTO INVERTIDO")
-palabras.reverse()
+plabras = palabras[::-1]
 texto_invertido = ' '.join(palabras)
 print(f"Si ordenamos tu texto invertido va a decir: \n{texto_invertido}")
 
