@@ -26,7 +26,7 @@ class PaginaRegistro(FormView):
     template_name = "base/registro.html"
     form_class = UserCreationForm
     redirect_authenticated_user = True
-    success_url = reverse_lazy('tareas')
+    success_url = reverse_lazy('tareas') # Cuando se termine la ejecucion, me mande a la pagina de inicio en este caso tareas.
 
     def form_valid(self, form):
         usuario = form.save()
