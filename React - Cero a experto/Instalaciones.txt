@@ -1,0 +1,29 @@
+https://gist.github.com/Klerith/4a4abfd88a88b2d1f16efd95fea41362
+
+- Google Chrome
+- React Developer Tools
+- Redux DevTools
+- Visual Studio Code
+- Postman
+- Mongo Compass 
+- Git 
+- Node
+
+Extensiones para Visual
+- Activitus Bar
+- Bracket Pair Colorizer 2
+- ES7 React/Redux
+- Simple React Snippets
+- Auto Close Tag
+
+
+¿ Que es REACT?
+
+Es una libreria que permite crear aplicaciones
+
+- Declarativa
+- Eficiente
+- Predecible
+- Componentes
+- Server-side con Node
+- Aplicaciones moviles con React Native

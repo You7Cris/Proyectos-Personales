@@ -1,0 +1,16 @@
+Seccion 2:
+- Generar la base sobre JavasCript
+- Constantes y variables Let
+- Template String
+- Objetos literales
+- Arreglos
+- Desestructuracion (sumamente importante)
+- Promesas
+- Fecth API 
+- Ternarios
+- Async - Await
+
+
+https://create-react-app.dev/
+npx create-react-app my-app
+
