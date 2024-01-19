@@ -25,11 +25,11 @@ console.log( heroes );
 //     return heroes.find(( heroe ) => heroe.id == id);
 // }
 
-const getHeroeById = (id) => heroes.find( ( heroe ) => heroe.id == id);
+export const getHeroeById = (id) => heroes.find( ( heroe ) => heroe.id == id);
 
 console.log( getHeroeById(1) );
 
 // find, filter
-const getHeroeByOwner = ( owner ) => heroes.filter( (heroe) => heroe.owner == owner);
+export const getHeroeByOwner = ( owner ) => heroes.filter( (heroe) => heroe.owner == owner);
 
 console.log( getHeroeByOwner('DC'));
