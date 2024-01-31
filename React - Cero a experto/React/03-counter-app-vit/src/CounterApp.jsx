@@ -37,7 +37,7 @@ export const CounterApp = ( {value} ) => {
 
             <button onClick={ hanleAdd }> +1 </button>
             <button onClick={ restAdd }> -1 </button>
-            <button onClick={ resetAdd }> Reset </button>
+            <button aria-label="btn-reset" onClick={ resetAdd }> Reset </button>
         </>
     );
 }

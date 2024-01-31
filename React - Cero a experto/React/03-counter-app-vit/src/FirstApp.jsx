@@ -30,10 +30,12 @@ export const FirstApp = ( /*props*/ { title, subtitle, name } ) => {
             {/* <h1>{ newMessage }</h1> */}
             {/* <h1>{ JSON.stringify(newMessage) }</h1> */}
             {/* <h1>{ getResult(5, 9) }</h1> */}
-            <h1>{ title }</h1>
+            {/* <h1>{ title }</h1> */}
+            <h1 data-testid="test-title">{ title }</h1>
+            <p>{ subtitle }</p>
             <h1>{ subtitle }</h1>
             <p>{ name }</p>
-            <p>Soy un subtitulo</p>
+            {/* <p>Soy un subtitulo</p> */}
         {/* </div> */}
         </>
 
@@ -43,11 +45,11 @@ export const FirstApp = ( /*props*/ { title, subtitle, name } ) => {
 
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
-    subtitle: PropTypes.number.isRequired,
+    subtitle: PropTypes.string.isRequired,
 }
 
 FirstApp.defaultProps = {
-    title: 'No hay titulo',
-    subtitle: 1234 ,
+    //title: 'No hay titulo',
+    subtitle: 'No hay subtitulo' ,
     name: 'Cristian Gonzalez',
 }

@@ -3,11 +3,17 @@ html, body {
     color: white;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
-    padding: 70px;
+    padding: 10px;
 }
 
 button {
     padding: 15px;
     font-size: 1.3rem;
     margin: 15px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 15px;
 }
