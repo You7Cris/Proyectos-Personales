@@ -27,3 +27,9 @@ Es una libreria que permite crear aplicaciones
 - Componentes
 - Server-side con Node
 - Aplicaciones moviles con React Native
+
+npm install -g yarn
+
+
+
+

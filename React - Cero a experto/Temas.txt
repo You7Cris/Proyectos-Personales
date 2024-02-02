@@ -1,4 +1,4 @@
-Seccion 2:
+Seccion 3:
 - Generar la base sobre JavasCript
 - Constantes y variables Let
 - Template String
@@ -14,3 +14,132 @@ Seccion 2:
 https://create-react-app.dev/
 npx create-react-app my-app
 
+Seccion 4:
+
+- Nuestra primera aplicación - Hola Mundo
+- Exposiciones sobre los componentes
+- Creación de componentes (Functional Components)
+- Propiedades - Props
+- Impresiones en el HTML
+- PropTypes
+- DefaultProps
+- Introducción general a los Hooks
+- useState
+
+Componente -> Pequeña pieza encapsulada re-utilizable que puede tener estado o no 
+Hooper Kamikaze
+
+TwitterApp > Router (Navegacion entre paginas) > Screen/Pagina > Menu > MenuItem
+
+vitejs es mas rapido.
+https://vitejs.dev/
+
+
+// cra
+package.json - manejar el poyecto de node, donde estan las dependencias, scripts
+
+public - 
+
+manifest - para exponer como es la aplicacion 
+
+robots - Todos los bots de google 
+
+src - 
+
+js, jsx - Son lo mismo, solo que si el contenido tiene jsx se le agrega extension jsx 
+
+// vite
+index.html esta en la raiz del proyecto.
+
+yarn.lock - Que se vea que el proyecto se creo con yarn
+
+yarn add prop-types
+
+Hooks son funciones.
+
+
+Seccion 5: Pruebas Unitarias y de integracion
+
+- Introducción a las pruebas
+- AAA
+- Arrange - Arreglar
+- Act - Actuar
+- Assert - Afirmar
+- Primeras pruebas
+- Jest
+- Expect
+- toBe
+- Enzyme
+- Comandos útiles en la terminal para pruebas
+- Revisar elementos renderizados en el componente
+- Simular eventos
+
+Caracteristcias de las pruebas
+
+1. Faciles de escribir
+2. Faciles de leer 
+3. Confiables
+4. Rapidas
+5. Principalmente Unitarias 
+
+AAA - Arrange (Arreglar) paso inicial 
+Act (Actuar) Llamamos metodos, simulamos click, realizar acciones sobre el paso anterior
+Assert (Afirmar) Resultados esperados, que algo cambie, algo incremente o bien no suceda nada.
+
+Mitos
+- Hacen que mi aplicacion no tenga errores
+- Las pruebas no pueden fallar
+- Hacen mas lenta mi aplicacion 
+- Es una perdida de tiempo
+- Hay que probar todo 
+
+React-Testing-Laivery
+
+Jest es un framework que permite realizar pruebas en JavaScript, hay otras como Moka y puede trabajar con React-Testing-Laivery
+
+yarn add --dev jest
+
+yarn test 
+
+yarn add --dev -D @types/jest 
+
+yarn add --dev babel-jest @babel/core @babel/preset-env
+
+JEST
+https://jestjs.io/docs/tutorial-react
+
+React Testing Library
+https://testing-library.com/docs/react-testing-library/intro
+
+Seccion 6: GiExpertApp - Aplicacion 
+
+* Custom Hooks
+* Fetch hacia un API
+* Comunicación entre componentes
+* Clases de CSS
+* Animaciones
+* Enviar métodos como argumentos
+* Crear listados
+* keys
+* Giphy
+
+Esta es una aplicación pequeña pero muy ilustrativa que explica cómo utilizar React + customHooks para poder resolver necesidades en específico que podremos re-utilizar después.
+
+npm http server
+
+npm install --global http-server
+
+http-server -o
+
+
+Seccion 7: Generando el build de produccion y despliegues
+
+* Aprender cómo realizar backups a repositorios de Git
+* Subir nuestro repositorio a GitHub
+* Uso de Github Pages
+* Desplegar nuestra aplicación de React
+* Generar build de producción de nuestra aplicación
+
+
+- Netlify
+- Git Pages
