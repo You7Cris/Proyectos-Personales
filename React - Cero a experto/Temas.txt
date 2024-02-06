@@ -143,3 +143,23 @@ Seccion 7: Generando el build de produccion y despliegues
 
 - Netlify
 - Git Pages
+
+Seccion 8
+
+* Seguir el camino de las pruebas
+* Pruebas en componentes específicos
+* Pruebas en componentes de forma individual
+* Pruebas con customHooks
+* Esperar cambios en un customHook
+* Simular eventos en inputs y formularios
+* Simular llamadas a funciones
+* Evaluar si existen elementos en el componente
+
+React- Testing - Library
+
+yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react 
+yarn add --dev @testing-library/react @types/jest jest-environment-jsdom
+
+yarn add --dev whatwg-fetch
+
+https://react-hooks-testing-library.com/ // No se recomienda usar en la version 18
