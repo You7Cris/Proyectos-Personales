@@ -163,3 +163,21 @@ yarn add --dev @testing-library/react @types/jest jest-environment-jsdom
 yarn add --dev whatwg-fetch
 
 https://react-hooks-testing-library.com/ // No se recomienda usar en la version 18
+
+Seccion 9:
+
+Memo -> Memorizar
+
+* Profundizar en el tema de los Hooks
+* Crear otros customHooks
+* useState
+* useCounter - Personalizado
+* useEffect y sus precauciones
+* useRef
+* useFetch - Personalizado + optimizaciones
+* useLayoutEffect
+* Memo
+* useMemo
+* useCallback
+
+
