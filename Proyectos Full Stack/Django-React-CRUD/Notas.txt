@@ -1,0 +1,45 @@
+python --version
+
+node --version 
+
+# BACKEND DJANGO
+
+
+pip install virtualenv // Instalar entorno virtual
+python -m venv venv 
+
+./env/Scripts/activate
+
+pip install django 
+
+django-admin startproject djan
+go_crud_api . 
+
+python manage.py runserver // ejecutar django 
+
+python manage.py startapp tasks
+
+python manage.py migrate // Crea todas las tablas 
+
+# DJANGO REST-FRAMEWORK
+
+pip install djangorestframework
+
+# comunicar backend con fronted 
+
+libreria django-cors-headers
+
+python manage.py makemigrations (nombre_app) //si quiere que solo realice la migracion de la nombre_app
+ // crear las migraciones
+
+ python manage.py migrate (nombre_app) 
+
+ python manage.py createsuperuser 
+
+
+
+
+
+
+
+# FRONTED REACT

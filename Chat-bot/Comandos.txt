@@ -1,0 +1,10 @@
+ChatBot para wpp mediante terceros
+
+Requisitos:
+Tener instalado Node
+
+npm create bot-whatsapp@latest
+
+npm install
+npm start
+
