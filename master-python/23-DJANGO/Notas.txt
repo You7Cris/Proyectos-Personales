@@ -26,9 +26,14 @@ Modelo -> Interaccion con la base de datos
 Controlador -> Procesar informacion, peticiones del usuario
 Vista -> Lo que va a ver el usuario 
 
+archivo __init__.py
+Inicializa los paquetes de Python.
+__main__.py
+
 Instalar DJANGO 
 
-pip install Django==4.0.5 
+pip install django
+pip install django==4.0.5 
 
 python -h //Ayuda
 
@@ -92,6 +97,7 @@ https://docs.djangoproject.com/en/4.0/topics/http/shortcuts/
 
 
 ##Metodo render para trabajar con los template.
+# render -> proceso que permite visualizar la pagina en la pantalla 
 
 Agregando en el archivo settings.py en APPS la ruta de la carpeta 
 

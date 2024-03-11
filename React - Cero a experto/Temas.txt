@@ -180,4 +180,9 @@ Memo -> Memorizar
 * useMemo
 * useCallback
 
+yarn crate vite 
+
+
+
+
 
