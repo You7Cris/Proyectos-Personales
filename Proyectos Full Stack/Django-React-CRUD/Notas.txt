@@ -38,8 +38,51 @@ python manage.py makemigrations (nombre_app) //si quiere que solo realice la mig
 
 
 
-
-
-
-
 # FRONTED REACT
+
+vitejs mucho mas eficiente para proyectos fronted 
+node --version 
+
+npm create vite 
+
+npm install 
+npm run dev 
+
+# Instalacion de modulos
+npm i react-router-dom //Modulo para poder obtener multiples paginas en el fronted 
+react-hot-toast //Modulo para mostrar un tipo de interaccion al realizar una interaccion 
+axios //Modulo para realizar peticiones 
+react-hook-form //Modulo para validar el input en el fronted 
+
+pages -> almacenar multiples paginas 
+components -> guardar fracciones de interfaz por ejemplo botones, listas o formularios
+api -> que funciones van a poder pedir datos al Backend 
+
+# TAILWIND CSS 
+
+Se creo con vite 
+
+npm install -D tailwindcss post css autoprefixer
+npx tailwindcss init -p
+
+
+
+
+
+# DOCUMENTACION
+
+pip install coreapi
+
+from rest_framework.documentation import include_docs_urls
+
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema",
+}
+
+path("docs/", include_docs_urls(title="Tasks API"))
+
+##error de paquetes actualizar
+pip install --upgrade setuptools
+pip install --upgrade distribute
+
+
