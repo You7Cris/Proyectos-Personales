@@ -2,229 +2,11 @@
   key: {
     remoteJid: '573114174405@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0AE9FA533C746BA938A',
+    id: '5B3C57CD155854F6CFEA05095DF2BEDF',
     participant: undefined
   },
-  messageTimestamp: 1709926750,
-  pushName: 'Cristian Gonzalez',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Hola',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola',
-  from: '573114174405'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f1557a25-ccc3-40d8-9bce-4e38addc9abd',
-  keyword: 'key_9701327e-f837-46d9-8544-0da974ca767c',
-  answer: 'Bienvenido a un ChatBot de Deportes\n' +
-    'Hoy estamos animados!!, este bot te puede mostrar los partidos de las siguientes competiciones.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'f6d41913c79ca3cb3e1165c751d76ce6'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_221ef5f8-b66f-402e-a22b-ad23202b87ad',
-  keyword: 'ans_f1557a25-ccc3-40d8-9bce-4e38addc9abd',
-  answer: '1. Liga de Brasil.\n' +
-    '2. Premier League\n' +
-    '3. Championship (England)\n' +
-    '4. European Championship\n' +
-    '5. UEFA Champions League\n' +
-    '6. Ligue 1\n' +
-    '7. Bundesliga\n' +
-    '8. Serie A\n' +
-    '9. Eredivise\n' +
-    '10. Primeira League (Portugal)\n' +
-    '11. Copa Libertadores\n' +
-    '12. La Liga\n' +
-    '13. FIFA World Cup',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '72c49e06cb923476a54076c69f26e788'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1714487d-4cb7-40f6-977c-0c1381de183f',
-  keyword: 'ans_221ef5f8-b66f-402e-a22b-ad23202b87ad',
-  answer: 'Los partidos del dia son los siguientes: ',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '6b54bde140653bdde2cd42e0cde3c782'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_345c35e0-f9f2-4581-a5fa-21de58f9d6c2',
-  keyword: 'ans_1714487d-4cb7-40f6-977c-0c1381de183f',
-  answer: 'Eso son los partidos...',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '32be9dc3dc148752600744d5ba204dd6'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573135049276@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB0C385C3704BE71EB3FF',
-    participant: undefined
-  },
-  messageTimestamp: 1709926828,
-  pushName: 'Jhon Edward',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'hola',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'hola',
-  from: '573135049276'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f1557a25-ccc3-40d8-9bce-4e38addc9abd',
-  keyword: 'key_9701327e-f837-46d9-8544-0da974ca767c',
-  answer: 'Bienvenido a un ChatBot de Deportes\n' +
-    'Hoy estamos animados!!, este bot te puede mostrar los partidos de las siguientes competiciones.',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'f6d41913c79ca3cb3e1165c751d76ce6'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_221ef5f8-b66f-402e-a22b-ad23202b87ad',
-  keyword: 'ans_f1557a25-ccc3-40d8-9bce-4e38addc9abd',
-  answer: '1. Liga de Brasil.\n' +
-    '2. Premier League\n' +
-    '3. Championship (England)\n' +
-    '4. European Championship\n' +
-    '5. UEFA Champions League\n' +
-    '6. Ligue 1\n' +
-    '7. Bundesliga\n' +
-    '8. Serie A\n' +
-    '9. Eredivise\n' +
-    '10. Primeira League (Portugal)\n' +
-    '11. Copa Libertadores\n' +
-    '12. La Liga\n' +
-    '13. FIFA World Cup',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '72c49e06cb923476a54076c69f26e788'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1714487d-4cb7-40f6-977c-0c1381de183f',
-  keyword: 'ans_221ef5f8-b66f-402e-a22b-ad23202b87ad',
-  answer: 'Los partidos del dia son los siguientes: ',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '6b54bde140653bdde2cd42e0cde3c782'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_345c35e0-f9f2-4581-a5fa-21de58f9d6c2',
-  keyword: 'ans_1714487d-4cb7-40f6-977c-0c1381de183f',
-  answer: 'Eso son los partidos...',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '32be9dc3dc148752600744d5ba204dd6'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573114174405@s.whatsapp.net',
-    fromMe: false,
-    id: 'D0DAAF6D3E36D39003D189918BE7B89B',
-    participant: undefined
-  },
-  messageTimestamp: 1709931775,
-  pushName: 'Cristian Gonzalez',
+  messageTimestamp: 1711399430,
+  pushName: 'Cristian',
   broadcast: false,
   message: Message {
     conversation: 'Hola',
@@ -237,8 +19,8 @@
   from: '573114174405'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f1557a25-ccc3-40d8-9bce-4e38addc9abd',
-  keyword: 'key_9701327e-f837-46d9-8544-0da974ca767c',
+  ref: 'ans_d3ba6d91-bb0e-40ab-85bd-be26897fdc3b',
+  keyword: 'key_65bc9e52-9071-4381-bbae-6eb63475b281',
   answer: 'Bienvenido a un ChatBot de Deportes\n' +
     'Hoy estamos animados!!, este bot te puede mostrar los partidos de las siguientes competiciones.',
   options: {
@@ -253,11 +35,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'f6d41913c79ca3cb3e1165c751d76ce6'
+  refSerialize: 'd808f58fccfd39de6acfd0170e047190'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_221ef5f8-b66f-402e-a22b-ad23202b87ad',
-  keyword: 'ans_f1557a25-ccc3-40d8-9bce-4e38addc9abd',
+  ref: 'ans_184356bf-f5df-4180-a0e1-a5f8f3f0f8d8',
+  keyword: 'ans_d3ba6d91-bb0e-40ab-85bd-be26897fdc3b',
   answer: '1. Liga de Brasil.\n' +
     '2. Premier League\n' +
     '3. Championship (England)\n' +
@@ -283,11 +65,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '72c49e06cb923476a54076c69f26e788'
+  refSerialize: '599a078e53ad2193bccd6cdca66e6b12'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1714487d-4cb7-40f6-977c-0c1381de183f',
-  keyword: 'ans_221ef5f8-b66f-402e-a22b-ad23202b87ad',
+  ref: 'ans_e8369878-3de1-459d-bbf8-c018857b30af',
+  keyword: 'ans_184356bf-f5df-4180-a0e1-a5f8f3f0f8d8',
   answer: 'Los partidos del dia son los siguientes: ',
   options: {
     media: null,
@@ -301,11 +83,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '6b54bde140653bdde2cd42e0cde3c782'
+  refSerialize: '01c4f5113fe95c5e4104bd628d16a23b'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_345c35e0-f9f2-4581-a5fa-21de58f9d6c2',
-  keyword: 'ans_1714487d-4cb7-40f6-977c-0c1381de183f',
+  ref: 'ans_0d15dc05-7135-4f18-b380-864c73eb15c0',
+  keyword: 'ans_e8369878-3de1-459d-bbf8-c018857b30af',
   answer: 'Eso son los partidos...',
   options: {
     media: null,
@@ -319,5 +101,5 @@
     keyword: {},
     callback: false
   },
-  refSerialize: '32be9dc3dc148752600744d5ba204dd6'
+  refSerialize: '6dd8a321b145ced4426579fd30069737'
 }

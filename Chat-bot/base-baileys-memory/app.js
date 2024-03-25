@@ -21,7 +21,7 @@ const menuAPI = async () =>{
         url: 'http://api.football-data.org/v4/matches',
         headers: {
             'X-Auth-Token': '7ea9c80b36364478940b361b2dcaa23f',
-            'X-Unfold-Goals': true
+            'X-Unfold-Goals': true,
         //   'X-RapidAPI-Key': '9529a9893amsh0d744c01c0f88e6p1bf1e7jsn943e0f2eb2fb',
         //   'X-RapidAPI-Host': 'footapi7.p.rapidapi.com'
         }
@@ -29,6 +29,17 @@ const menuAPI = async () =>{
 
     try {
     const response = await axios.request(options);
+
+    const consultar = response.data["matches"]
+
+    console.log(consultar)
+
+    if (consultar == [])
+    {
+        return 'No hay datos de partidos'
+    }
+    console.log(response.data["matches"])
+    
     return response.data["matches"].map(results => ({results:[`*Area:* ${area_formato(results.area.name)} ` + '\n' + `*Competencia:* ${results.competition.name}` + '\n' + 
     //Fecha del partido
     `${((results.status) == 'FINISHED') ? '' : formato_fecha(results.utcDate) + '\n'}` +
@@ -49,13 +60,10 @@ const menuAPI = async () =>{
         + '\n'].join('\n')}))
     //return data.map(results => ({results:[`* Equipo: ${results.entity.name}`].join('\n')}))
 
-
-
     } catch (error) {
         console.error(error);
     }
 
-    
 }
 
 // Area
@@ -99,10 +107,10 @@ function area_formato(area)
 }
 
 //mostrar imagen Ej
-function mostrar_imagen(imagen)
-{
+// function mostrar_imagen(imagen)
+// {
      
-}
+// }
 
 function formato_fecha(fecha){
     var date = new Date(fecha);
