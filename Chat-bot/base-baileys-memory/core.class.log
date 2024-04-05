@@ -1,0 +1,108 @@
+<<<<<<< HEAD
+=======
+[handleMsg]:  {
+  key: {
+    remoteJid: '573114174405@s.whatsapp.net',
+    fromMe: false,
+    id: '5B3C57CD155854F6CFEA05095DF2BEDF',
+    participant: undefined
+  },
+  messageTimestamp: 1711399430,
+  pushName: 'Cristian',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573114174405'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d3ba6d91-bb0e-40ab-85bd-be26897fdc3b',
+  keyword: 'key_65bc9e52-9071-4381-bbae-6eb63475b281',
+  answer: 'Bienvenido a un ChatBot de Deportes\n' +
+    'Hoy estamos animados!!, este bot te puede mostrar los partidos de las siguientes competiciones.',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'd808f58fccfd39de6acfd0170e047190'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_184356bf-f5df-4180-a0e1-a5f8f3f0f8d8',
+  keyword: 'ans_d3ba6d91-bb0e-40ab-85bd-be26897fdc3b',
+  answer: '1. Liga de Brasil.\n' +
+    '2. Premier League\n' +
+    '3. Championship (England)\n' +
+    '4. European Championship\n' +
+    '5. UEFA Champions League\n' +
+    '6. Ligue 1\n' +
+    '7. Bundesliga\n' +
+    '8. Serie A\n' +
+    '9. Eredivise\n' +
+    '10. Primeira League (Portugal)\n' +
+    '11. Copa Libertadores\n' +
+    '12. La Liga\n' +
+    '13. FIFA World Cup',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '599a078e53ad2193bccd6cdca66e6b12'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e8369878-3de1-459d-bbf8-c018857b30af',
+  keyword: 'ans_184356bf-f5df-4180-a0e1-a5f8f3f0f8d8',
+  answer: 'Los partidos del dia son los siguientes: ',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '01c4f5113fe95c5e4104bd628d16a23b'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_0d15dc05-7135-4f18-b380-864c73eb15c0',
+  keyword: 'ans_e8369878-3de1-459d-bbf8-c018857b30af',
+  answer: 'Eso son los partidos...',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '6dd8a321b145ced4426579fd30069737'
+}
+>>>>>>> be0a40902204154175a7ea8255a68765d9e8fca6
