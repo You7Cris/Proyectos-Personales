@@ -158,6 +158,7 @@
     #menu{
         clear: both;
         float: none;
+<<<<<<< Updated upstream
         margin: 0px auto;
         width: 440px;
     }
@@ -295,4 +296,11 @@
         margin-top: 20px;
     }
 
+=======
+        margin: 0 auto;
+        width: 440px;
+    }
+
+    
+>>>>>>> Stashed changes
 }
