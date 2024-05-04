@@ -6,13 +6,18 @@ Tener python instalado.
 
 #### Windows
 https://www.python.org/downloads/
-python --version
-py --version
+
+    python --version
+    py --version
+
 #### Linux (Ubuntu)
-python3 --version
-sudo apt-get install python3.6
+
+    python3 --version
+    sudo apt-get install python3.6
+
 #### Linux (Debian)
-sudo dnf install python3
+
+    sudo dnf install python3
 
 ## Activar entorno virtual.
 
