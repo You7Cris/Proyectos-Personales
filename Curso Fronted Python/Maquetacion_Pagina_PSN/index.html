@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="icon" href="assets/icons/PlayStation_logo.svg">
+    <title>PSN Cristian Gonzalez</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.cdnfonts.com/css/sst" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+    $(window).scroll(function(){
+        posicionarMenu();
+    });
+
+    function posicionarMenu() {
+        var altura_del_header = $('.header').outerHeight(true);
+        var altura_del_menu = $('.container .menu').outerHeight(true);
+
+        if ($(window).scrollTop() >= altura_del_header){
+            $('.container .menu').addClass('fixed');
+            $('.container .menu nav .menu').css('margin-top', (altura_del_menu) + 'px');
+        } else {
+            $('.container .menu').removeClass('fixed');
+            $('.container .menu nav .menu').css('margin-top', '0');
+        }
+    }
+
+    $('body .juegos .juegos .carts a .image img').hover(function(){
+        $('body .juegos .juegos .carts a .image img').css({
+            "opacity": "0.5"
+        });
+    });
+        
+    </script>
+</head>
+<body class="container">
+    <div class="sony">
+        <img src="assets/icons/SimpleIconsSony.svg" alt="Sony">
+    </div>
+    <div class="menu">
+        <nav class="menu">
+            <img class="logo-psn" src="assets/icons/MdiSonyPlaystation.svg" alt="PSN">
+            <a href="#">Juegos 
+                <img src="assets/icons/RiArrowDropDownLine.svg">
+            </a>
+            <a href="#">PS5
+                <img src="assets/icons/RiArrowDropDownLine.svg">
+            </a>
+            <a href="#">PS4
+                <img src="assets/icons/RiArrowDropDownLine.svg">
+            </a>
+            <a href="#">Servicios
+                <img src="assets/icons/RiArrowDropDownLine.svg">
+            </a>
+            <a href="#">Accesorios
+                <img src="assets/icons/RiArrowDropDownLine.svg">
+            </a>
+            <a href="#">Noticias
+                <img src="assets/icons/RiArrowDropDownLine.svg">
+            </a>
+            <a href="#">Tienda
+                <img src="assets/icons/RiArrowDropDownLine.svg">
+            </a>
+            <a href="#">Asistencia
+                <img src="assets/icons/RiArrowDropDownLine.svg">
+            </a>
+            <button class="button-login">Iniciar sesión</button>
+            <img src="assets/icons/MaterialSymbolsSearch.svg" alt="Search" class="search">
+        </nav>
+    </div>
+    <div class="container-banners">
+        <div class="banner-fondo">
+            <div class="container">
+                <div class="left">
+                    <div class="image">
+                        <img src="assets/images/banner/stellar-blade-logo-01-20mar24$en.webp" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Recupera la tierra para la humanidad</h3>
+                        <p>Salva a la humanidad de la extinci&oacute;n en esta electrizante historia de acci&oacute;n. Disponible el 26 de abril exclusivamente en PS5.</p>
+                    </div>
+                    <div class="button">
+                        <a href="#">M&aacute;s informaci&oacute;n</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banners">
+            <div class="carts">
+                <img src="assets/images/f1.webp" alt="F1">
+            </div>
+            <div class="carts">
+                <img src="assets/images/blade.webp" alt="F1">
+            </div>
+            <div class="carts">
+                <img src="assets/images/carta.webp" alt="F1">
+            </div>
+            <div class="carts">
+                <img src="assets/images/destiny2.webp" alt="F1">
+            </div>
+            <div class="carts">
+                <img src="assets/images/Haciaaventura.webp" alt="F1">
+            </div>
+            <div class="carts">
+                <img src="assets/images/ofertas.webp" alt="F1">
+            </div>
+        </div>
+    </div> 
+    <div class="juegos">
+        <div class="title">
+            <h3>Grandes juegos de PS4 y PS5 ya disponibles o que llegar&aacute;n pronto</h3>
+        </div>
+        <div class="buttons">
+            <div class="container">
+                <button class="new">
+                    Nuevos lanzamientos
+                </button>
+                <button class="before">
+                    Pr&oacute;ximamente
+                </button>
+            </div>
+        </div>
+        <div class="juegos">
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/call-of-duty-modern-warfare-3-pack-01-en-22aug23.webp" alt="">
+                    </div>
+                    <p>Call Of Duty: Modern Warfare III</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/marvels-spider-man-2-thumbnail-02-en-01oct21.webp" alt="">
+                    </div>
+                    <p>Marvel's Spider-Man 2</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/tekken-8-store-artwork-01-en-14jun23.webp" alt="">
+                    </div>
+                    <p>Tekken 8</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/ea-sports-fc-store-art-01-en-27sept23.webp" alt="">
+                    </div>
+                    <p>EA SPORTS&#8482; FC 24</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/dragons-dogma-2-store-artwork-03-en-18jan23.webp" alt="">
+                    </div>
+                    <p>Dragon's Dogma 2</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/helldivers-2-store-art-01-en-4march24.webp" alt="">
+                    </div>
+                    <p>Helldivers&#8482; 2</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/lego-fortnite-pack-01-en-01dec23.webp" alt="">
+                    </div>
+                    <p>LEGO Fortnite</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/The-last-of-us-part-ii-remastered-packshot-01-26feb24$en.webp" alt="">
+                    </div>
+                    <p>The Last of Us Part II Remastered</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/final-fantasy-vii-rebirth-pack-01-en-30oct23.webp" alt="">
+                    </div>
+                    <p>Final Fantasy VII Rebirth</p>
+                </a>
+            </div>
+            <div class="carts">
+                <a href="#">
+                    <div class="image">
+                        <!-- icono PS4 o PS5 -->
+                        <img src="assets/images/Juegos/final-fantasy-xvi-pack-01-en-15jun23.webp" alt="">
+                    </div>
+                    <p>Final Fantasy XVI</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-items">
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h3>Siente la nueva realidad</h3>
+                </div>
+                <div class="text">
+                    <p>Sum&eacute;rgete en mundos &eacute;picos que van m&aacute;s all&aacute; de la realidad con los innovadores auriculares con micr&oacute;fono de PlayStation VR2 y el control PlayStation VR2 Sense</p>
+                </div>
+                <div class="button">
+                    <a href="#">M&aacute;s informaci&oacute;n</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-items-two">
+        <div class="content-two">
+            <div class="left">
+                <div class="title">
+                    <h3>ESTE MES</h3>
+                    <h2>EN PLAYSTATION</h2>
+                </div>
+                <div class="text">
+                    <p>Echa un vistazo a los mejores lanzamientos de este mes, adem&aacute;s de art&iacute;culos especializados, gu&iacute;s y m&aacute;s</p>
+                </div>
+                <div class="button">
+                    <a href="#">M&aacute;s informaci&oacute;n</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-list" style="background-color: #26254f;">
+        <div class="width">
+            <div class="carts">
+                <div class="image">
+                    <img src="assets/images/carts/stellar-blade-screenshot-01-en-06feb23.webp" alt="">
+                </div>
+                <div class="title">
+                    <h2>Nuevos lanzamientos</h2>
+                </div>
+                <div class="text">
+                    <p>Descubre los nuevos y m&aacute;s garndes t&iacute;tulos de este mes, como Stellar Blade.</p>
+                </div>
+            </div>
+            <div class="carts">
+                <div class="image">
+                    <img src="assets/images/carts/harold-halibut-hero-01-en-28march24.webp" alt="">
+                </div>
+                <div class="title">
+                    <h2>PlayStation Indies</h2>
+                </div>
+                <div class="text">
+                    <p>Descubre los lanzamientos indie m&aacute;s innovadores y &uacute;nicos de este mes, incluido Harold Halibut.</p>
+                </div>
+            </div>
+            <div class="carts">
+                <div class="image">
+                    <img src="assets/images/carts/Fortnite-Battle-Royale-CH5S2-keyart-01-07mar24$es-mx.webp" alt="">
+                </div>
+                <div class="title">
+                    <h2>&Uacute;ltimas novedades</h2>
+                </div>
+                <div class="text">
+                    <p>Mantente informado de algunos de los nuevos eventos m&aacute;s grandes del mes, includia la actualizaci&oacute;n "Mitos y mortales" de Fortnide.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-store">
+        <div class="container">
+            <div class="cart">
+                <img src="assets/icons/PlayStation Store.svg" alt="">
+                <h3>Nuevos ahorros en PlayStation Store</h3>
+                <p>Explora los &uacute;ltimos descuentos y promociones de temporada en excelentes juegos y complementos para PS5 y PS4.</p>
+                <div class="button">
+                    <a href="#">Ver todas las promociones</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="assets/images/ps-store-may-savings-image-block-01-22apr24$es.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="redes">
+        <div class="title">
+            <h3>S&iacute;guenos en redes sociales</h3>
+        </div>
+        <div class="icons">
+            <div class="url">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="imgIcon"><path fill="#393939" d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z"/></svg>
+                </a>
+            </div>
+            <div class="url">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="imgIcon"><path fill="#393939" d="m23.446 18l.889-5.791h-5.557V8.451c0-1.584.776-3.129 3.265-3.129h2.526V.392S22.277.001 20.085.001c-4.576 0-7.567 2.774-7.567 7.795v4.414H7.431v5.791h5.087v14h6.26v-14z"/></svg>
+                </a>
+            </div>
+            <div class="url">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="imgIcon"><path fill="#393939" d="M8 0C5.829 0 5.556.01 4.703.048C3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7C.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297c.04.852.174 1.433.372 1.942c.205.526.478.972.923 1.417c.444.445.89.719 1.416.923c.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417c.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046c.78.035 1.204.166 1.486.275c.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485c.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598c-.28.11-.704.24-1.485.276c-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598a2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485c-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486c.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276c.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92a.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217a4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334a2.667 2.667 0 0 1 0-5.334"/></svg>
+                </a>
+            </div>
+            <div class="url">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="imgYoutube"><path fill="#393939" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814M9.545 15.568V8.432L15.818 12z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="container-mn">
+                <div class="title">
+                    <img src="assets/icons/PlayStation.svg" alt="Play Station" class="logo">
+                </div>
+                <div class="list-container">
+                    <div class="section">
+                        <p>Acerca de</p>
+                        <a href="#">Acerca de SIE</a>
+                        <a href="#">Carreras</a>
+                        <a href="#">PlayStation Studios</a>
+                        <a href="#">PlayStation Productions</a>
+                        <a href="#">Empresa</a>
+                    </div>
+                    <div class="section">
+                        <p>Productos</p>
+                        <a href="#">PS5</a>
+                        <a href="#">PS4</a>
+                        <a href="#">PS VR2</a>
+                        <a href="#">PS Plus</a>
+                        <a href="#">Accesorios</a>
+                        <a href="#">Juegos</a>
+                    </div>
+                    <div class="section">
+                        <p>Valores</p>
+                        <a href="#">Medioambiente</a>
+                        <a href="#">Accesibilidad</a>
+                        <a href="#">Seguridad online</a>
+                        <a href="#">Diversidad, igualdad e inclusi&oacute;n</a>
+                    </div>
+                    <div class="section">
+                        <p>Servicio t&eacute;cnico</p>
+                        <a href="#">Centro de asistencia</a>
+                        <a href="#">Seguridad en PlayStation</a>
+                        <a href="#">Estado PSN</a>
+                        <a href="#">Reparaciones de PlayStation</a>
+                        <a href="#">Restauraci&oacute;n de contraseña</a>
+                        <a href="#">Manuales</a>
+                    </div>
+                    <div class="section">
+                        <p>Recursos</p>
+                        <a href="#">T&eacute;rminos de Servicio de PSN</a>
+                        <a href="#">Pol&iacute;tica de cancelaci&oacute;n de PS Store</a>
+                        <a href="#">Clasificaci&oacute;n por edad</a>
+                        <a href="#">Aviso sobre la salud</a>
+                        <a href="#">Desarrolladores</a>
+                    </div>
+                    <div class="section">
+                        <p>Conectar</p>
+                        <div id="redes">
+                            <!-- <img src="assets/icons/RiFacebookBoxFill.svg" alt="Facebook">
+                            <img src="assets/icons/RiYoutubeFill.svg" alt="YouTube"> -->
+                            <a href="#"><img src="assets/icons/RiFacebookBoxFill.svg" alt="Facebook"></a>
+                            <a href="#"><img src="assets/icons/RiTwitterXFill.svg" alt="twitter"></a>
+                            <a href="#"><img src="assets/icons/MdiInstagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="assets/icons/RiYoutubeFill.svg" alt="YouTube"></a>
+                        </div>
+                        <a href="#"></a>
+                        <a href="#">App iOS</a>
+                        <a href="#">App Android</a>
+                    </div>
+                </div>
+                <div class="marca">
+                    <div class="section">
+                        <div class="imagenes">
+                            <img src="assets/icons/cdnlogo.com_sie.svg" alt="Sony Enternaiment">
+                        </div>
+                        <div class="imagen">
+                            <img id="certified" src="assets/icons/ESRB Privacy Certified.svg" alt="Certified">
+                        </div>
+                    </div>
+                    <div class="information">
+                        <p>&copy;2024 Sony Interactive Entertainment LLC</p>
+                        <p>Todos los contenidos, t&iacute;tulos de juegos, nombres y/o im&aacute;genes comerciales, marcas comerciales, arte e im&aacute;genes asociadas son marcas comerciales y/o material con derechos de autor de sus propietarios respectivos. Todos los derechos reservados. <a href="#" class="link">M&aacute;s informaci&oacute;n</a></p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="left">
+                        <a href="#"><img src="assets/icons/SubwayWorld.svg" alt=""></a>
+                        <a href="#" class="pais">Colombia <img src="assets/icons/IconoirNavArrowRight.svg" alt="" style="width: 25px;"></a>
+                    </div>
+                    <div class="right">
+                        <a href="#">Legal</a>
+                        <p>|</p>
+                        <a href="#">Pol&iacute;tica de privacidad</a>
+                        <p>|</p>
+                        <a href="#">T&eacute;rminos de uso del sistio web</a>
+                        <p>|</p>
+                        <a href="#">Mapa del sitio</a>
+                    </div>
+                </div>
+                <div class="creator">
+                    <p>Cristian Gonzalez Arango - You7-_-Cris&#174 - Desarrollado para la certificaci&oacute;n del curso de Fronted</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

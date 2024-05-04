@@ -1,0 +1,864 @@
+/* fonts */
+@import url('https://fonts.cdnfonts.com/css/sst');
+
+:root{
+    --dk-font: "SST", Arial, sans-serif;
+    --dk-font-condensed: "SST condensed", "SST", Arial, sans-serif;
+    --dk-font-bebas-neue: "bebas neue", "SST", Arial, sans-serif;
+    --dk-font-mont: "Mont W05", "SST", Arial, sans-serif;
+    --color: #0070CC;
+    --colorfooter: #00439C;
+}
+
+/* body {
+    font-family: var(--dk-font);
+} */
+
+/* Parte superior */
+*{
+    /* min-width: 1250px; */
+    /* min-height: 648px; */
+    margin: 0 auto;
+    font-family: var(--dk-font);
+    letter-spacing: 1px;
+}
+
+body{
+    min-width: 1450px;
+    min-height: 600px;
+    position: relative;
+}
+
+body .sony{
+    width: 100%;
+    background-color: black;
+    max-height: 36px;
+
+}
+
+body .sony img{
+    margin-left: 93%;
+    width: 90px;
+    margin-top: -30px;
+}
+
+/* Nav */
+
+/* nav con position fixed */
+/* nav{
+    overflow: hidden;
+    position: fixed;
+    background: white;
+    width: 100%;
+    max-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+nav{
+    /* position: fixed; */
+    margin-left: 15px;
+    max-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .logo-psn{
+    margin: 5px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+nav a{
+    /* padding: 0px 20px 0px 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* font-weight: bold; */
+    font-weight: 500;
+    font-size: 14px;
+    /* font-family: var(--dk-font); */
+    /* font-style: italic; */
+    color: black;
+    margin: 7px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover{
+    color: #0070CC;
+}
+
+nav a img{
+    margin-top: 5px;
+    margin-left: -5px;
+    margin-right: -15px;
+    width: 30px;
+
+}
+
+nav a img:hover{
+    opacity: 0.7;
+}
+
+nav .button-login{
+    margin-left: 46%;
+    margin-top: 3px;
+    padding: 3px 15px;
+    font-size: 16px;
+    background-color: var(--color);
+    color: white;
+    border: 0px;
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav .button-login:hover{
+    background-color: #00439C;
+}
+
+nav .search{
+    width: 26px;
+}
+
+/* Banner de imagenes */
+
+/* body .container-banners .slider-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+body .container-banners .slider-container img{
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+} */
+
+body .container-banners .banner-fondo{
+    background-image: url('../images/banner/stellar-blade-hero-desktop-01-en-21mar24.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 80vh;
+    cursor: pointer;
+    /* height: 100vh; */
+    /* background-attachment: fixed; */
+    /* display: grid;
+    grid-template-columns: 45% 55%; */
+}
+
+body .container-banners .banner-fondo .container{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* margin-top: 10%; */
+    padding-top: 5%;
+}
+
+body .banner-fondo .container .left .image img{
+    width: 400px;
+}
+
+body .banner-fondo .container .left .content{
+    padding-top: 5px;
+    color: white;
+    padding-left: 2%;
+}
+
+.banner-fondo .container .left .content h3{
+    font-size: 36px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.banner-fondo .container .left .content p{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.banner-fondo .container .left .button{
+    padding-top: 10% ;
+    padding-left: 2%;
+}
+
+.banner-fondo .container .left .button a{
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.banner-fondo .container .left .button:hover{
+    transform: translateX(10px);
+    transition: 0.8s;
+}
+
+
+/* Banners */
+
+body .container-banners .banners{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+body .container-banners .banners .carts{
+    /* padding: 10px; */
+    border-radius: 20px;
+    /* border: 1px solid #c2c2c2; */
+    /* width: 100%; */
+    opacity: 0.7;
+}
+
+body .container-banners .banners .carts img{
+    width: 150px;
+    height: 80px;
+    /* border: 1px solid #b4b4b4; */
+    border-radius: 20px;
+    /* padding: 3px; */
+}
+
+body .container-banners .banners .carts:hover{
+    opacity: 1;
+}
+
+body .container-banners .banners .carts img:hover{
+    cursor: pointer;
+    /* border: 3px solid #0070CC; */
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px #b4b4b4;
+    /* animation: animacion-banners;
+    transition: 1s; */
+    display: block;
+    transition: 0.8s;
+}
+/*
+body .container-banners .banners .carts img:active{
+    border: 2px solid #00439C;
+} */
+
+
+
+/* @keyframes animacion-banners {
+    50%{
+        transform: translateY(-5px);
+        border: 1px solid #00439C;
+        padding: 10px;
+    }
+    100%{
+        transform: translateY(-12px);
+    }
+
+} */
+
+/* Juegos proximamente */
+
+
+body .juegos{
+    background-color: #121314;
+    /* width: 100%; */
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+body .juegos .title{
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+body .juegos .title h3{
+    font-size: 39px;
+    font-weight: 300;
+}
+
+body .juegos .buttons{
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    /* width: 25%; */
+}
+
+body .juegos .buttons .container{
+    background-color: #1B1C1F;
+    border-radius: 50px;
+    width: 21%;
+
+    /* width: 50%; */
+}
+
+body .juegos .buttons .container button{
+    /* width: 25%; */
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    width: auto;
+    cursor: pointer;
+}
+
+
+body .juegos .buttons .container .before{
+    background-color: #1B1C1F;
+    color: white;
+    border: 0px;
+    /* padding: 20px; */
+}
+
+body .juegos .buttons .container .before:hover{
+    color: #00439C;
+}
+
+
+/* ------------------------------------- */
+body .juegos .juegos{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto; */
+    justify-content: center;
+    align-items: center;
+}
+
+body .juegos .juegos .carts{
+    width: 20%;
+    padding-bottom: 20px;
+}
+
+
+body .juegos .juegos .carts a .image img{
+    width: 205px;
+    /* width: auto; */
+    /* opacity: 0.5; */
+    border-radius: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+body .juegos .juegos .carts a{
+    text-decoration: none;
+}
+
+body .juegos .juegos .carts a p{
+    color: white;
+    text-align: left;
+    font-size: 14px;
+}
+
+body .juegos .juegos .carts a .image img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+    transition: 0.8s;
+}
+
+/* items */
+
+/* ------------------------------------------ */
+
+body .container-items{
+    background-image: url(../images/psvr2-register-homepage-hero-desktop-01-en-14nov22.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 80vh;
+    /* height: 100vh; */
+    /* background-attachment: fixed; */
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+body .container-items .content{
+    color: white;
+    text-align: left;
+    padding-top: 200px;
+    padding-left: 100px;
+    width: 100%;
+    /* height: 150px; */
+    /* line-height: 50px; */
+    /* padding: 200px; */
+}
+
+body .container-items .content .left,
+body .container-items .content-two .left{
+    float: left;
+}
+
+body .container-items .content .title h3{
+    font-size: 38px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+body .container-items .content .text{
+    font-size: 17px;
+    /* width: 50%; */
+    text-align: left;
+    font-weight: 400;
+    line-height: 25px;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+
+/* body .container-items .content .button .style{
+    padding: 20px;
+    border: 1px solid black;
+    margin-right: 70%;
+    border-radius: 30px;
+    height: 24px;
+    margin-top: -5px;
+    padding-left: 3px;
+} */
+
+body .container-items .content .button a,
+body .container-items-two .content-two .button a{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: static;
+    text-decoration: none;
+}
+
+body .container-items .content .button:hover,
+body .container-items-two .content-two .button:hover{
+
+    transform:translateX(5px);
+    transition: 0.8s;
+}
+
+/* content-two */
+
+body .container-items-two{
+    background-image: url(../images/this-month-on-playstation-apr-homepage-background-desktop-01-en-26mar24.webp);
+    margin: 0;
+    height: 80vh;
+    /* object-fit: cover; */
+    /* width: 100%; */
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+body .container-items-two .content-two .title h3{
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+body .content-two .title h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+body .container-items-two .content-two{
+    color: white;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 100px;
+    width: 100%;
+}
+
+body .container-items-two .content-two .text{
+    font-size: 20px;
+    /* width: 50%; */
+    opacity: 0.7;
+    text-align: left;
+    font-weight: 400;
+    line-height: 30px;
+    padding-right: 15%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+/* container-list */
+
+body .container-list{
+    padding: 40px;
+    margin: 0;
+}
+
+body .container-list .width{
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    margin: 0;
+}
+
+body .container-list .width .carts{
+    width: 40%;
+    text-align: center;
+    padding: 50px;
+    padding-top: 0px;
+    margin-top: -10%;
+}
+
+
+body .container-list .width .carts .image img{
+    width: 350px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 4px 10px 10px #1B1C1F;
+}
+
+body .container-list .width .carts .image img:hover{
+    transform: scale(1.04);
+    transition: 0.8s;
+    box-shadow: -3px 1px 59px 14px #1B1C1F;
+}
+
+
+
+body .container-list .width .carts .title h2{
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+body .container-list .width .carts .text p{
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+
+}
+
+/* Promociones PS Store */
+body .container-store{
+    width: 90%;
+}
+
+body .container-store .container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+    align-items: center;
+}
+
+body .container-store .container .cart{
+    text-align: left;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+body .container-store .container .cart img{
+    width: 400px;
+    margin-left: -50px;
+    margin-bottom: -100px;
+    margin-top:-100%;
+}
+
+body .container-store .container .cart h3{
+    font-size: 39px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+body .container-store .container .cart p{
+    font-size: 18px;
+    color: #6b6b6b;
+    letter-spacing: .1px;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+body .container-store .container .cart .button{
+    padding-top: 40px;
+    /* text-align: center; */
+}
+
+body .container-store .container .cart .button a{
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+    color: white;
+    background-color: #C03500;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+
+body .container-store .container .cart .button:hover{
+    transform: translateX(5px);
+    transition: 0.8s;
+}
+
+body .container-store .container .image{
+    padding: 40px;
+}
+
+body .container-store .container .image img{
+    width: 900px;
+    border-radius: 30px;
+    box-shadow: 1px 24px 56px -11px #6b6b6b;
+}
+
+body .container-store .container .image img:hover{
+    transform: scale(1.02);
+    transition: 0.8s;
+}
+
+
+/* Siguenos en redes sociales */
+body .redes {
+    padding-top: 5%;
+    padding-bottom: 10px;
+    background-color: #F5F7FA;
+    /* background-color: #00439C; */
+}
+body .redes .title h3{
+    font-size: 40px;
+    font-weight: 100;
+    /* color: rgb(31, 31, 31); */
+    color: #2E2E2F;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+body .redes .icons{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+body .redes .icons .url{
+    padding: 10px;
+}
+
+body .redes .icons .url a .imgIcon{
+    margin-top: 10%;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 10%;
+    padding: 20px;
+}
+
+body .redes .icons .url a .imgYoutube{
+    margin-top: 10%;
+    width: 130px;
+    text-align: center;
+    margin-bottom: 10%;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+body .redes .icons .url a .imgIcon:hover,
+body .redes .icons .url a .imgYoutube:hover{
+
+    transform: scale(1.05);
+    transition: 0.8s;
+
+}
+
+
+
+
+/* Footer */
+footer{
+    color: white;
+}
+
+footer .container{
+    background-color: var(--colorfooter);
+    padding-bottom: 30px;
+}
+
+footer .container .container-mn{
+    width: 90%;
+    padding-top: 20px;
+}
+
+footer .container-mn .title,
+footer .container-mn .list-container,
+footer .container-mn .marca{
+    padding-bottom: 20px;
+    border-bottom: 1px outset #d8d8d8;
+}
+
+footer .container-mn .title .logo{
+    color: white;
+    width: 280px;
+    filter: invert(100%);
+}
+
+footer .container-mn .list-container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+
+}
+
+footer .container-mn .section p{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+footer .container-mn .section a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+footer .container-mn .section a:hover{
+    color: #0070CC
+}
+
+footer .container-mn .section #redes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+footer .container-mn .section #redes a img{
+    width: 25px;
+    padding-right: 20px;
+    transition: 0.5s;
+}
+
+footer .container-mn .section #redes a img:hover{
+    opacity: 0.7;
+    /* transform: scale(1.3); */
+}
+
+/* footer .container-mn .marca .section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+} */
+
+footer .container-mn .marca .section {
+    display: flex;
+    justify-content: space-between;
+    line-height: 10px;
+}
+
+footer .container-mn .marca .section .imagenes{
+    float: left;
+    width: 100%;
+}
+
+footer .container-mn .marca .section .imagen{
+    width: 7.5%;
+}
+
+footer .container-mn .marca .section .imagen img{
+    width: 150px;
+    /* float: right; */
+}
+
+
+
+footer .container-mn .marca .section .imagenes img
+{
+    width: 250px;
+    padding-top: 10px;
+    line-height: 50px;
+}
+footer .container-mn .marca .information{
+    margin-right: 10%;
+    line-height: 20px;
+}
+footer .container-mn .marca .information p{
+    font-size: 14px;
+}
+
+footer .container-mn .marca .information p a{
+    color: white;
+}
+
+footer .container-mn .marca .information p a:hover{
+    opacity: 0.7;
+}
+
+footer .container-mn .footer {
+    padding-top: 20px;
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer .container-mn .footer .left{
+    width: 95%;
+}
+
+footer .container-mn .footer .left a,
+footer .container-mn .footer .right a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .container-mn .footer .left a:hover,
+footer .container-mn .footer .right a:hover{
+    opacity: 0.7;
+}
+
+
+
+footer .container-mn .footer .left a{
+    float: left;
+}
+
+footer .container-mn .footer .left a img{
+    width: 30px;
+    padding-right: 30px;
+}
+
+footer .container-mn .footer .left .pais{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .container-mn .footer .right{
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    width: 80%;
+    margin-left: 20%;
+}
+
+
+footer .container-mn .creator{
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

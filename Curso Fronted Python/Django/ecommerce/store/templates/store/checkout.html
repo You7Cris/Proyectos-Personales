@@ -1,0 +1,69 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div class="custom-row">
+    <div class="custom-col-half">
+        <div class="box-element" id="form-wrapper">
+            <form id="form">
+                <div id="user-info">
+                    <div class="form-field">
+                        <input required class="custom-input" type="text" name="name" placeholder="Name..">
+                    </div>
+                    <div class="form-field">
+                        <input required class="custom-input" type="email" name="email" placeholder="Email..">
+                    </div>
+                </div>
+                
+                <div id="shipping-info">
+                    <hr>
+                    <p>Shipping Information:</p>
+                    <hr>
+                    <div class="form-field">
+                        <input class="custom-input" type="text" name="address" placeholder="Address..">
+                    </div>
+                    <div class="form-field">
+                        <input class="custom-input" type="text" name="city" placeholder="City..">
+                    </div>
+                    <div class="form-field">
+                        <input class="custom-input" type="text" name="state" placeholder="State..">
+                    </div>
+                    <div class="form-field">
+                        <input class="custom-input" type="text" name="zipcode" placeholder="Zip code..">
+                    </div>
+                    <div class="form-field">
+                        <input class="custom-input" type="text" name="country" placeholder="Country..">
+                    </div>
+                </div>
+
+                <hr>
+                <input id="form-button" class="custom-button success" type="submit" value="Continue">
+            </form>
+        </div>
+        <div class="box-element hidden" id="payment-info">
+            <small>Paypal Options</small>
+        </div>
+    </div>
+
+    <div class="custom-col-half-two">
+        <div class="box-element">
+            <a class="button outline-dark" href="{% url 'cart' %}">← Back to Cart</a>
+            <hr>
+            <h3>Order Summary</h3>
+            <hr> 
+            <div class="checkout-container">
+
+            {% for item in items %}
+                <div class="cart-row cart-row-checkout">
+                    <img class="row-image checkout-image" src="{{item.product.imageURL}}" alt="product">
+                    <p>{{item.product.name}}</p>
+                    <p>${{item.product.price}}</p>
+                    <p>x{{item.product.quantity}}</p>
+                </div>
+            {% endfor %}
+            </div>
+            <h5>Items:    {{order.get_cart_items}}</h5>
+            <h5>Total:    ${{order.get_cart_total}}</h5>
+        </div>
+    </div>
+</div>
+{% endblock content %}
