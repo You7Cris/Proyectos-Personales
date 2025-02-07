@@ -140,6 +140,11 @@
         margin-bottom: 15px;
         max-width: 100%;
     }
+
+    #lateral input[type="button"], 
+    #lateral input[type="submit"]{
+        padding-left: 2px;
+    }
 }
 
 @media (max-width: 724px){
@@ -158,7 +163,6 @@
     #menu{
         clear: both;
         float: none;
-<<<<<<< Updated upstream
         margin: 0px auto;
         width: 440px;
     }
@@ -296,11 +300,4 @@
         margin-top: 20px;
     }
 
-=======
-        margin: 0 auto;
-        width: 440px;
-    }
-
-    
->>>>>>> Stashed changes
 }

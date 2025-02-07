@@ -31,4 +31,58 @@ Responsive Web design con CSS3
 4. Viewport 
 5. Adaptar web a cualquier pantalla
 6. Pasamos a una maquetacion avanzada 
- 
+
+# SASS
+
+instalar node js
+
+npm install -g sass
+sass --version
+
+sass --watch estilos.scss styles.css
+
+mixxins -> funciones.
+
+
+# LESS 
+
+preprocesador de css 
+
+npm install -g less
+
+lessc estilos.less styles.css
+
+
+# FLEXBOX 
+maquetacion de la web.
+
+1. Introduccion 
+2. Display 
+3. Direcciones (unidireccional)
+4. Envoltorio 
+5. Orden 
+6. Grow y shrink 
+7. Flex basis 
+8. Variables y funciones en CSS 
+9. Alineacion 
+10. Maquetacion completa con Flexbox 
+
+Es una nueva tecnologia que ha incluido CSS.
+
+Es un modulo de CSS que define un nuevo modelo de cajas que se puede usar para construir interfaces de usuario.
+
+Optimiza el diseño de la interfaz de usuario de una página web.
+
+Mas orientado al responsive.
+
+# CSS GRID 
+
+bidireccional.
+
+Maquetacion web con pocas lineas de codigo CSS.
+
+1. Introduccion a CSS Grid Layout
+2. Columnas
+3. Fracciones
+4. Filas 
+5. Expansion 
