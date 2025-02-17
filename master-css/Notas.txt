@@ -86,3 +86,19 @@ Maquetacion web con pocas lineas de codigo CSS.
 3. Fracciones
 4. Filas 
 5. Expansion 
+6. Maquetacion completa
+7. Areas 
+8. Gap 
+9. De Flexbox a Grid
+10. Responsive con Grid
+
+# Boostrap 
+
+Framework de css, marco de trabajo para construir interfaces de usuario.
+
+1. Introduccion a Boostrap
+2. Filas y columnas 
+3. Maquetacion 
+4. Utilidades 
+5. Componentes 
+6. Mas practicas 

@@ -1,0 +1,233 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/*-------------------------EJERCICIO COMPLETO CON AREAS  */
+
+/* --------------------EJERCICIO COMPLETO--------------------- */
+
+#website-areas *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website-areas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas: 
+        "cabecera cabecera cabecera cabecera cabecera"
+        "menu menu menu menu menu"
+        "contenido contenido contenido contenido lateral"
+        "pie pie pie pie lateral";
+
+    justify-content: center;
+
+    width: 75%;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#website-areas #cabecera{
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    
+    background: blue;
+    color: white;
+}
+
+#website-areas #menu{
+    grid-area: menu;
+    background: lightblue;
+    color: black;
+
+}
+
+#website-areas #menu ul{
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#website-areas #contenido{
+    grid-area: contenido;
+    background: #eee;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+
+}
+
+#website-areas #contenido article{
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#website-areas #lateral{
+    grid-area: lateral;
+    background: orange;
+    color: white;
+}
+
+#website-areas #pie-pagina{
+    grid-area: pie;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/* --------------------EJERCICIO COMPLETO--------------------- */
+
+#website *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    justify-content: center;
+
+    width: 75%;
+    height: 100vh;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+#website #cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    grid-column: 1 / 6;
+    background: blue;
+    color: white;
+}
+
+#website #menu{
+    grid-column: 1 / 6;
+    background: lightblue;
+    color: black;
+
+}
+
+#website #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#website #contenido{
+    grid-column: 1 / 5;
+    background: #eee;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    padding: 20px;
+
+}
+
+#website #contenido article{
+    background: #ccc;
+    border: 1px solid #555;
+}
+
+#website #lateral{
+    background: orange;
+    color: white;
+}
+
+#website #pie-pagina{
+    grid-column: 1 / 6;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+/* ================================================================= */
+/* EJEMPLOS */
+
+.layout{
+    width: 80%;
+    height: 600px;
+    margin: 0px auto;
+    /* Definir el contenedor de GRID */
+    display: grid;
+    /* grid-template-columns: repeat(2, calc(25% - 10px) 15% 35%); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 3fr repeat(2, 1fr);
+    /* Espacio entre elementos GRID */
+    grid-gap: 10px;
+    border: 3px solid orangered;
+    padding: 10px;
+}
+
+.layout .caja{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    background: gray;
+}
+
+.layout .red{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: red;
+}
+
+.layout .blue{
+    grid-column: 2 / 4;
+    background: blue;
+}
+
+.layout .green{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background: green;
+}
+
+.layout .pink{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5 ;
+    background: pink;
+
+}
+
+.layout .lightblue{
+    /*
+    grid-column-start: 1;
+    grid-column-end: 3;
+    */
+    grid-column: 2 / 4;
+    background: lightblue;
+}
+
+.layout .orange{
+    grid-row: 3 / 5 ;
+    background: orange;
+}
