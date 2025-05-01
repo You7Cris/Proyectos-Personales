@@ -22,6 +22,7 @@ La estructura base es la siguiente:
   "operation": "operación",
   "params": [...]
 }
+```
 
 La ruta es `/calcular` y el método HTTP es `POST`, cuando solo vas a enviar una operacion.
 http://localhost:3000/calcular
@@ -55,6 +56,8 @@ http://localhost:3000/calcular-multiples
     "params": [8, 2, 2]
   }
 ]
+
+```
 
 Donde `operation` es la operación a realizar y `params` son los parámetros de la operación.
 
