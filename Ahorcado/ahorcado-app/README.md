@@ -2,28 +2,16 @@
 
 Este aplicativo es para jugar al Ahorcado.
 
-## Recommended IDE Setup
+Para jugar ingresa una palabra de al menos 3 letras, que disfrutes el juego.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Requisitos:
+* Tener instalado Node.js 
 
-## Customize configuration
+clona el repositorio, abre el simbolo de sistema, Git Bash o la PowerShell y ejecuta los siguientes comandos:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1. Ingresa a la carpeta ahorcado-app
+2. Ejecuta npm install
+3. Ejecuta npm run dev
 
-## Project Setup
+Luego abre el navegador en la url que te brinde en mi caso fue https://localhost:5173/
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
