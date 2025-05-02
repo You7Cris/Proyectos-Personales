@@ -48,7 +48,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['reiniciar'])
+const emit = defineEmits(['reiniciar']) // cuando se emita el evento reiniciar
 
 const letrasAdivinadas = ref([])
 const letrasEquivocadas = ref([])
@@ -57,6 +57,7 @@ const errores = computed(() => letrasEquivocadas.value.length) //Para que se dib
 
 const palabraNormalizada = computed(() => props.palabra.toLowerCase())
 
+// Se actualiza en tiempo real 
 const estado = computed(() => {
   const unicasLetras = [...new Set(palabraNormalizada.value)]
   if (unicasLetras.every(letra => letrasAdivinadas.value.includes(letra))) return 'gano'
@@ -64,10 +65,11 @@ const estado = computed(() => {
   return 'jugando'
 })
 
-const juegoPerdido = computed(() => estado.value !== 'jugando')
+//Se actualiza en tiempo real
+const juegoPerdido = computed(() => estado.value !== 'jugando') //Propiedad computada que devuelve un booleano
 
 const validarLetras = () => {
-  letras.value = letras.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ]/g, '')
+  letras.value = letras.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ]/g, '') // elimina caracteres no alfanuméricos
 }
 
 const adivinarLetra = () => {
@@ -86,6 +88,7 @@ const adivinarLetra = () => {
   letras.value = ''
 }
 
+// watch es una función que se ejecuta cuando se cambia el valor de una variable
 watch(() => props.palabra, (palabra) => {
   letrasAdivinadas.value = []
   letrasEquivocadas.value = []

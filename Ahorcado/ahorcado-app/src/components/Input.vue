@@ -12,15 +12,15 @@
 <script setup>
 import { ref } from 'vue'
 
-const emit = defineEmits(['iniciar'])
+const emit = defineEmits(['iniciar']) // Puede emitir un evento a su componente padre.
 
-const input = ref('')
+const input = ref('') //Permite que la variable sea accesible en todos los componentes.
 
 const validarInput = () => {
     input.value = input.value.replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ]/g, '')
 
     if(input.value.length > 12){
-        input.value = input.value.slice(0, 12)
+        input.value = input.value.slice(0, 12) //Recortar la palabra si es mayor de 12 letras.
     }
 
 }
@@ -32,7 +32,7 @@ const comenzar = () => {
         return
     }
 
-    emit('iniciar', input.value.trim())
+    emit('iniciar', input.value.trim()) // Llama el evento y manda un parametro como argumento.
     input.value = ''
 }
 
